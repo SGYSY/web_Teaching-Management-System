@@ -36,27 +36,41 @@ body {
 
 /* 头部 */
 .header {
-    height: 42px;
-    margin: 30px auto;
+    width: 100%;
+    height: 80px;
+    margin: 0, auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
 }
 
-h1 {
-    float: left;
+.header .header-wrapper {
+    width: 1200px;
+    height: 80px;
+    margin: 0, auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
 /* 导航 */
 .nav {
-    float: left;
     margin-left: 40px;
     height: 42px;
 }
 
-.nav li {
-    float: left;
+.nav .tool li {
     margin-right: 10px;
 }
 
-.nav li a {
+.nav .tool li a {
     display: block;
     padding: 0 5px;
     height: 42px;
@@ -65,14 +79,16 @@ h1 {
     color: #050505;
 }
 
-.nav li a:hover {
+.nav .tool li a:hover {
     border-bottom: 2px solid #00a4ff;
+}
+
+.nav .tool {
+    display: flex;
 }
 
 /* 搜索 */
 .search {
-    float: left;
-    margin-left: 30px;
     width: 230px;
     height: 40px;
     position: relative;
@@ -123,7 +139,7 @@ h1 {
     position: absolute;
     top: 38px;
     left: 10px;
-    z-index: 2;
+    z-index: 5;
     border-radius: 5px;
     border: 1px solid #016bb9;
     
@@ -135,7 +151,6 @@ h1 {
 
 /* 用户 */
 .user {
-    float: right;
     margin-right: 35px;
     height: 42px;
     line-height: 42px;
@@ -230,7 +245,7 @@ h1 {
     color: #fff;
     text-align: center;
     line-height: 40px;
-    background-color: #00449d;
+    background-color: #016bb9;
     border-radius: 18px;
 }
 

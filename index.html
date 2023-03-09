@@ -15,51 +15,54 @@
     <!--css: 浮动/display ；盒子模型 ；文字样式-->
 
     <!--头部header:负责头部区域的样式， wrapper只负责版心效果 -->
-    <div class="header wrapper">
-        <h1>
-            <a href="#"><img src="./images/huayunlogo4.png" alt=""></a>
-        </h1>
-
-        <!-- 导航 -->
-        <div class="nav">
-            <ul>
-                <li>
-                    <a href="#">课程管理</a>
-                </li>
-                <li>
-                    <a href="#">用户管理</a>
-                </li>
-                <li>
-                    <a href="#">排课管理</a>
-                </li>
-                <li>
-                    <a href="#">作业管理</a>
-                </li>
-                <li>
-                    <a href="#">实验管理</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- 搜索 -->
-        <div class="search">
-            <input type="text" placeholder="输入关键词">
-            <ul class="result-list">
-                <li class="past">历史记录：</li>
-                <li>清华大学很帅</li>
-                <li>北京大学厉害</li>
-                <li>复旦大学呀</li>
-                <li>中南大学</li>
-            </ul>
-            <span class="iconfont icon-icon-test1"></span>
-        </div>
-
-        <!-- 用户 -->
-        <div class="user">
-            <img src="./images/user.png" alt="">
-            <span>Siyu YanYan</span>
+    <div class="header fixed">
+        <div class="header-wrapper">
+            <h1>
+                <a href="#"><img src="./images/huayunlogo4.png" alt=""></a>
+            </h1>
+    
+            <!-- 导航 -->
+            <div class="nav">
+                <ul class="tool">
+                    <li>
+                        <a href="file:///C:/Users/YANSIYU/Desktop/Service/course.html#">课程管理</a>
+                    </li>
+                    <li>
+                        <a href="#">用户管理</a>
+                    </li>
+                    <li>
+                        <a href="#">排课管理</a>
+                    </li>
+                    <li>
+                        <a href="#">作业管理</a>
+                    </li>
+                    <li>
+                        <a href="#">实验管理</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- 搜索 -->
+            <div class="search">
+                <input type="text" placeholder="输入关键词">
+                <ul class="result-list">
+                    <li class="past">历史记录：</li>
+                    <li>清华大学很帅</li>
+                    <li>北京大学厉害</li>
+                    <li>复旦大学呀</li>
+                    <li>中南大学</li>
+                </ul>
+                <span class="iconfont icon-icon-test1"></span>
+            </div>
+    
+            <!-- 用户 -->
+            <div class="user">
+                <img src="./images/user.png" alt="">
+                <span>Siyu YanYan</span>
+            </div>
         </div>
     </div>
+    
 
     <!-- 轮播图 -->
     <div class="banner">
@@ -266,6 +269,7 @@
     </div>
 
     <script>
+        /* 轮播图 */
         const sliderData = [
             { color: '#87d0dadc' },
             { color: '#73a274' },
@@ -274,12 +278,15 @@
             { color: '#0f5c93' },
         ]
         const colors = document.querySelector('.banner .wrapper')
+        /* 两个按钮 */
         const next = document.querySelector('.next')
         const prev = document.querySelector('.prev')
         const slider = document.querySelector('.banner .wrapper')
         
         let timeId = 0
         let i = 0
+
+        /* 两个按钮控制轮播图的切换 */
         next.addEventListener('click', function(){
             i++
             i = i >=sliderData.length ? 0 : i
@@ -298,6 +305,8 @@
             document.querySelector(`.slider-indicator li:nth-child(${i + 1})`).classList.add('active')
         }
 
+
+        /* 计时器：轮播图自动切换 */
         timeId = setInterval(function () {
             next.click()
         }, 1000)
@@ -313,6 +322,8 @@
         }, 1000)
         })
         
+
+        /* 搜索栏文字输入和历史记录 */
         const input = document.querySelector('[type=text]')
         const searchul = document.querySelector('.result-list')
         input.addEventListener('focus', function () {
@@ -331,6 +342,16 @@
             }
         })
         
+        /* 导航栏固定 */
+        const header = document.querySelector('.header')
+        window.addEventListener('scroll', function () {
+            const n = document.documentElement.scrollTop
+            if ( n >= 0) {
+                header.classList.add('fixed')
+            } else {
+                header.classList.remove('fixed')
+            }
+        })
     </script>
 </body>
 </html>
