@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* 内减模式 */
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.clearfix:before,.clearfix:after {
+    content: "";
+    display: table;
+}
+ .clearfix:after {
+    clear: both;
+ }
+
+body {
+    background-color: #fff;
+}
+
+/* 版心 */
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部 */
+.header {
+    height: 42px;
+    margin: 30px auto;
+}
+
+h1 {
+    float: left;
+}
+
+/* 导航 */
+.nav {
+    float: left;
+    margin-left: 40px;
+    height: 42px;
+}
+
+.nav li {
+    float: left;
+    margin-right: 10px;
+}
+
+.nav li a {
+    display: block;
+    padding: 0 5px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    color: #050505;
+}
+
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+/* 搜索 */
+.search {
+    float: left;
+    margin-left: 30px;
+    width: 230px;
+    height: 40px;
+    position: relative;
+    border: 1px solid #016bb9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 18px;
+}
+
+.search input {
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    padding-left: 20px;
+    width: 170px;
+    height: 33px;
+    border: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.search input:focus {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.search .iconfont {
+    position: absolute;
+    left: 185px;
+    line-height: 40px;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+/*控制placeholder的样式*/
+.search input::placeholder {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.search button {
+    font-size: 14px;
+}
+
+.search .result-list {
+    display: none;
+    width: 170px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    position: absolute;
+    top: 38px;
+    left: 10px;
+    z-index: 2;
+    border-radius: 5px;
+    border: 1px solid #016bb9;
+    
+}
+
+.past {
+    color: #016bb9;
+}
+
+/* 用户 */
+.user {
+    float: right;
+    margin-right: 35px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.user img {
+    /*调节图片竖直对齐方式*/
+    vertical-align: middle;
+}
