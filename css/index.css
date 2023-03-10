@@ -155,7 +155,7 @@ body {
 
 /* 用户 */
 .user {
-    margin-right: 35px;
+    margin-right: 10px;
     height: 42px;
     line-height: 42px;
 }
@@ -476,7 +476,7 @@ body {
     margin-top: 47px;
     padding-top: 30px;
     height: 417px;
-    background-color: #fff;
+    background-color: #f2f5faf5;
 }
 
 .footer .left {
