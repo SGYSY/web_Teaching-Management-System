@@ -164,3 +164,175 @@ body {
     /*调节图片竖直对齐方式*/
     vertical-align: middle;
 }
+
+/* 轮播图 */
+.banner-course {
+    position: relative;
+    height: 420px;
+    margin-top: 100px;
+    background-color: hsl(205, 46%, 69%);
+}
+
+.banner-course .cube-course {
+    background-color: #9bcee7;
+}
+
+.slider-indicator {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    top: 90%;
+}
+
+.slider-indicator li {
+    width: 8px;
+    height: 8px;
+    margin: 4px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.slider-indicator li.active {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+}
+
+.toggle button {
+    width: 28px;
+    height: 28px;
+    appearance: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.toggle .prev {
+    position: absolute;
+    top: 50%;
+    margin-left: 30px;
+}
+
+.toggle .next {
+    position: absolute;
+    top: 50%;
+    left: 1120px;
+    margin-right: 30px;
+}
+
+.toggle button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* 精品推荐 */
+.goods {
+    margin-top: 30px;
+    padding-left: 34px;
+    padding-right: 26px;
+    height: 240px;
+    background-color: #fff;
+    box-shadow: 0px 2px 3px 3px
+        rgba(118, 118, 118, 0.2);
+    line-height: 60px;
+    border-radius: 5px;
+}
+
+.goods h2{
+    display: block;
+    float: left;
+    font-size: 16px;
+    color: #016bb9;
+    font-weight: 400;
+}
+
+.goods ul{
+    float: left;
+    margin-left: 30px;
+}
+
+.goods ul li {
+    float: left;
+}
+
+.goods li a {
+    border-left: 1px solid #bfbfbf;
+    padding: 0 30px;
+    font-size: 16px;
+    color: #050505;
+    position: relative;
+    transition: top 2s ease-out;
+}
+
+.goods li a:hover {
+    top: -5px;
+}
+
+/* 精品课程  */
+.box {
+    margin-top: 35px;
+}
+
+.box .content li {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    position: relative;
+}
+
+.box .content li:nth-child(5n) {
+    margin-right: 0;
+}
+
+.box .content li .mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 228px;
+    height: 156px;
+    background-image: linear-gradient(
+        transparent,
+        rgba(0,0,0,0.8)
+    );
+    opacity: 0;
+    transition: all 1s;
+}
+
+.box .content li:hover .mask {
+    opacity: 0.4;
+}
+
+.box .content li h3 {
+    padding: 20px;
+    font-size: 14px;
+    color: #050505;
+    font-weight: 400;
+    position: relative;
+    transition: top 2s ease-out;
+}
+
+.box .content li h3:hover {
+    top: -10px;
+}
+
+.box .content li p {
+    padding: 0 12px;
+    font-size: 12px;
+    color: #999999;
+    position: absolute;
+    top: 90%;
+}
+
+.box .content li span {
+    color: #016bb9;
+}

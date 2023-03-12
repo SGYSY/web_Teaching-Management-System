@@ -196,7 +196,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <img src="./images/pic5.png" alt="">
+                            <img src="./images/pic7.png" alt="">
                             <div class="mask"></div>
                             <h3>Android Hybrid APP开发实战 H5+原生</h3>
                             <p><span>高级</span> • 1125人在学习</p>
@@ -286,17 +286,14 @@
     <script>
         /* 轮播图 */
         const sliderData = [
-            { color: '#87d0dadc' },
-            { color: '#73a274' },
-            { color: '#5197c8' },
-            { color: '#348fd0' },
-            { color: '#0f5c93' },
+            { url: './images/banner1.jpg' },
+            { url: './images/banner2.png'},
         ]
-        const colors = document.querySelector('.banner .wrapper .pic')
+        const img = document.querySelector('.banner .wrapper .pic img')
         /* 两个按钮 */
         const next = document.querySelector('.next')
         const prev = document.querySelector('.prev')
-        const slider = document.querySelector('.banner .wrapper')
+        const slider = document.querySelector('.banner .wrapper .pic img')
         
         let timeId = 0
         let i = 0
@@ -315,7 +312,7 @@
         })
 
         function toggle() {
-            colors.style.backgroundColor = sliderData[i].color
+            img.src = sliderData[i].url
             document.querySelector('.slider-indicator .active').classList.remove('active')
             document.querySelector(`.slider-indicator li:nth-child(${i + 1})`).classList.add('active')
         }

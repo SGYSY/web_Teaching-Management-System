@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth       ;
+}
+
 li {
     list-style: none;
 }
@@ -313,7 +317,7 @@ body {
     height: 8px;
     margin: 4px;
     border-radius: 50%;
-    background-color: #016bb9;
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 0.4;
     cursor: pointer;
 }
@@ -333,7 +337,7 @@ body {
     color: #000000;
     border-radius: 4px;
     cursor: pointer;
-    z-index: 20;
+    z-index: 10;
 }
 
 .toggle .prev {
@@ -350,7 +354,7 @@ body {
 }
 
 .toggle button:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* 精品推荐 */
@@ -475,10 +479,12 @@ body {
     padding: 0 12px;
     font-size: 12px;
     color: #999999;
+    position: absolute;
+    top: 90%;
 }
 
 .box .content li span {
-    color: #ff7c2d;
+    color: #016bb9;
 }
 
 /* 版权 */
