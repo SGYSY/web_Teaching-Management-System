@@ -67,7 +67,7 @@
         <!-- 侧边栏 -->
         <div class="sidebar">
             <ul class="sidebar-list">
-                <li><div class="iconfont icon-zuoyeguanli"></div><a href="#">课程</a></li>
+                <li class="sidecourse"><div class="iconfont icon-zuoyeguanli"></div><a href="#">课程</a></li>
                 <li><div class="iconfont icon-tuijian"></div><a href="#">推荐</a></li>
                 <li><div class="iconfont icon-12"></div><a href="#">顶部</a></li>
             </ul>
@@ -75,8 +75,14 @@
         
         <!-- 轮播图 -->
         <div class="banner">
+            <ul class="slider-indicator">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
             <div class="wrapper">
-                
                 <div class="left">
                     <ul>
                         <li><a href="#">语文<span class="iconfont icon-yuwen1">></span></a></li>
@@ -90,38 +96,36 @@
                         <li><a href="#">地理<span class="iconfont icon-earth-full">></span></a></li>
                     </ul>
                 </div>
-                <ul class="slider-indicator">
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <div class="right">
-                    <h2>我的课程表</h2>
-                    <div class="content">
-                        <dl>
-                            <dt>继续学习程序设计语言
-                                <dd>正在学习-使用对象</dd>
-                            </dt>
-                        </dl>
-                        <dl>
-                            <dt>继续学习程序设计语言
-                                <dd>正在学习-使用对象</dd>
-                            </dt>
-                        </dl>
-                        <dl>
-                            <dt>继续学习程序设计语言
-                                <dd>正在学习-使用对象</dd>
-                            </dt>
-                        </dl>
+                <div class="cube">
+                    <div class="pic">
+                        <img src="./images/banner1.jpg" alt="">
                     </div>
-                    <a href="#" class="more">全部课程</a>
+                    <div class="toggle">
+                        <button class="next">&gt;</button>
+                        <button class="prev">&lt;</button>
+                    </div>
                 </div>
-                <div class="toggle">
-                    <button class="prev">&lt;</button>
-                    <button class="next">&gt;</button>
+            </div>
+            <div class="right">
+                <h2>我的课程表</h2>
+                <div class="content">
+                    <dl>
+                        <dt>继续学习程序设计语言
+                            <dd>正在学习-使用对象</dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt>继续学习程序设计语言
+                            <dd>正在学习-使用对象</dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt>继续学习程序设计语言
+                            <dd>正在学习-使用对象</dd>
+                        </dt>
+                    </dl>
                 </div>
+                <a href="#" class="more">今日课程</a>
             </div>
         </div>
 
@@ -288,7 +292,7 @@
             { color: '#348fd0' },
             { color: '#0f5c93' },
         ]
-        const colors = document.querySelector('.banner .wrapper')
+        const colors = document.querySelector('.banner .wrapper .pic')
         /* 两个按钮 */
         const next = document.querySelector('.next')
         const prev = document.querySelector('.prev')
@@ -352,6 +356,19 @@
             input.value = ''
             }
         })
+
+        /* 侧边栏课程隐藏效果 */
+        const course = document.querySelector('.sidecourse')
+        const right = document.querySelector('.banner .right')
+        course.addEventListener('mouseenter', function () {
+            right.style.display = 'block'
+            right.style.opacity = 1
+        })
+        course.addEventListener('mouseleave', function () {
+            right.style.display = 'none'
+            right.style.opacity = 0
+        })
+
         
         /* 导航栏固定 */
         const header = document.querySelector('.header')
