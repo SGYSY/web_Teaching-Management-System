@@ -430,61 +430,185 @@ body {
     color: #a5a5a5;
 }
 
-.box .content li {
-    float: left;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    width: 228px;
-    height: 270px;
+.box .index-rank {
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .index-rank .popular {
+    width: 392px;
     background-color: #fff;
+    border-radius: 8px;
+}
+
+.box .index-rank .popular .popular-title {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(1, 107, 185, 0.8);
+    border-radius: 8px;
+}
+
+.popular-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 430px;
+    width: 100%;
+}
+
+.popular-body .p-b-b {
+    height: 63.3px;
+    width: 100%;
+    display: flex;
     position: relative;
 }
 
-.box .content li:nth-child(5n) {
-    margin-right: 0;
+.popular-body .p-b-b span {
+    display: block;
+    width: 20px;
+    margin-left: 10px;
 }
 
-.box .content li .mask {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 228px;
-    height: 156px;
-    background-image: linear-gradient(
-        transparent,
-        rgba(0,0,0,0.8)
-    );
-    opacity: 0;
-    transition: all 1s;
+.popular-body .p-b-b img {
+    width: 112px;
 }
 
-.box .content li:hover .mask {
-    opacity: 0.4;
+.ppl-tt-l {
+    align-items: flex-end;
+    font-size: 18px;
+    font-weight: 600;
+    color: #d1802b;
+    margin-left: 50px;
 }
 
-.box .content li h3 {
-    padding: 20px;
-    font-size: 14px;
-    color: #050505;
-    font-weight: 400;
+.ppl-tt-r {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    color: #e2e2e2;
+    margin-right: 20px;
+}
+
+.box .index-rank .new {
+    width: 392px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.box .index-rank .new .new-title {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(1, 107, 185, 0.8);
+    border-radius: 8px;
+}
+
+.new-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 430px;
+    width: 100%;
+}
+
+.new-body .n-b-b {
+    height: 63.3px;
+    width: 100%;
+    display: flex;
     position: relative;
-    transition: top 2s ease-out;
 }
 
-.box .content li h3:hover {
-    top: -10px;
+.new-body .n-b-b span {
+    display: block;
+    width: 20px;
+    margin-left: 10px;
 }
 
-.box .content li p {
-    padding: 0 12px;
-    font-size: 12px;
-    color: #999999;
-    position: absolute;
-    top: 90%;
+.new-body .n-b-b img {
+    width: 112px;
 }
 
-.box .content li span {
-    color: #016bb9;
+.n-tt-l {
+    align-items: flex-end;
+    font-size: 18px;
+    font-weight: 600;
+    color: #d1802b;
+    margin-left: 50px;
+}
+
+.n-tt-r {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    color: #e2e2e2;
+    margin-right: 20px;
+}
+
+.box .index-rank .star {
+    width: 392px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.box .index-rank .star .star-title {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(1, 107, 185, 0.8);
+    border-radius: 8px;
+}
+
+.star-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 430px;
+    width: 100%;
+}
+
+.star-body .s-b-b {
+    height: 63.3px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.star-body .s-b-b span {
+    display: block;
+    width: 20px;
+    margin-left: 10px;
+}
+
+.star-body .s-b-b img {
+    width: 112px;
+}
+
+.st-tt-l {
+    align-items: flex-end;
+    font-size: 18px;
+    font-weight: 600;
+    color: #d1802b;
+    margin-left: 50px;
+}
+
+.st-tt-r {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    color: #e2e2e2;
+    margin-right: 20px;
 }
 
 /* 版权 */
