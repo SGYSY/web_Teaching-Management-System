@@ -1,0 +1,120 @@
+.container {
+    width: 100%;
+    height: 725px;
+    display: flex;
+}
+
+.container .left {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(141, 181, 234);
+    position: relative;
+}
+
+.container .left .left-1 {
+    width: 530px;
+    height: 525px;
+    background-color: #fff;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.container .left .left-1 .left-2 {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+}
+
+.container .right {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(36, 41, 84);
+    position: relative;
+}
+
+.container .right .right-1 {
+    width: 530px;
+    height: 525px;
+    background-color: rgb(141, 181, 234);
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .right .right-1 .right-2 {
+    width: 380px;
+    height: 475px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.right-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right-4 {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    height: 30px;
+}
+
+h1 {
+    display: block;
+    width: 100%;
+    height: 62px;
+    text-align: center;
+    color: #000000;
+}
+
+p {
+    font-size: 16px;
+}
+
+input {
+    border-radius: 5px;
+    border-style: hidden;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: #efefef;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    height: 30px;
+}
+
+input::placeholder {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+button {
+    border-radius: 5px;
+    border-style: hidden;
+    width: 120px;
+    height: 30px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    display: block;
+    margin-top: 40px;
+    width: 150px;
+    height: 30px;
+    color: #000000;
+}
