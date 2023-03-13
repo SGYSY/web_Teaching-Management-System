@@ -7,7 +7,7 @@
 .container .left {
     width: 50%;
     height: 100%;
-    background-color: rgb(141, 181, 234);
+    background-color: rgb(178, 204, 250);
     position: relative;
 }
 
@@ -15,33 +15,55 @@
     width: 530px;
     height: 525px;
     background-color: #fff;
-    border-radius: 10px 0 0 10px;
+    border-radius: 20px 0 0 20px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2),
+                0 -10px 10px rgba(0, 0, 0, 0.2),
+                -10px 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .container .left .left-1 .left-2 {
-    width: 100px;
+    width: 140px;
     height: 50px;
     position: absolute;
-    left: 50px;
-    bottom: 50px;
+    left: 40px;
+    bottom: 70px;
+    margin-bottom: 5px;
+    font-size: 8px;
+    text-align: center;
+    color: #8f9296f5;
+}
+
+.container .left .left-1 .left-3 {
+    width: 130px;
+    height: 30px;
+    margin-top: 0;
+    position: absolute;
+    bottom: 35px;
+    font-size: 14px;
+    font-weight: 500;
+    left: 45px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    line-height: 30px;
 }
 
 .container .right {
     width: 50%;
     height: 100%;
-    background-color: rgb(36, 41, 84);
+    background-color: rgb(52, 66, 99);
     position: relative;
 }
 
 .container .right .right-1 {
     width: 530px;
     height: 525px;
-    background-color: rgb(141, 181, 234);
-    border-radius: 0 10px 10px 0;
+    background-color: rgb(178, 204, 250);
+    border-radius: 0 20px 20px 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -49,7 +71,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2),
+                0 -10px 10px rgba(0, 0, 0, 0.2),
+                10px 0 10px rgba(0, 0, 0, 0.2),
+                -10px 0 10px rgba(0, 0, 0, 0);
 }
+
+.container .right .right-1::before {
+    content: "";
+    position: absolute;
+    left: -10px; 
+    top: 0;
+    width: 10px; 
+    height: 100%;
+    background-color: white; 
+  }
 
 .container .right .right-1 .right-2 {
     width: 380px;
@@ -61,15 +97,17 @@
 }
 
 .right-3 {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .right-4 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 250px;
-    height: 30px;
+    height: 50px;
+    margin-top: 10px;
 }
 
 h1 {
@@ -88,12 +126,38 @@ input {
     border-radius: 5px;
     border-style: hidden;
     margin-left: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding-left: 10px;
     outline: none;
     border: #efefef;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     width: 250px;
+    height: 30px;
+}
+
+.right-5 {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.right-6 {
+    width: 80px;
+    height: 40px;
+    background-color: #016bb9;
+}
+
+.right-5 input {
+    border-radius: 5px;
+    border-style: hidden;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-right: 20px;
+    padding-left: 10px;
+    outline: none;
+    border: #efefef;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 180px;
     height: 30px;
 }
 
@@ -105,16 +169,40 @@ input::placeholder {
 button {
     border-radius: 5px;
     border-style: hidden;
-    width: 120px;
-    height: 30px;
+    width: 250px;
+    height: 50px;
     font-size: 16px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+    color: #8f9296f5;
+    background-color: rgb(52, 66, 99);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.right-7 {
+    margin-top: 30px;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-8 {
+    width: 200px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-8 span {
+    color: red;
+    font-size: 10px;
 }
 
 a {
     display: block;
-    margin-top: 40px;
-    width: 150px;
+    margin-top: 10px;
+    width: 110px;
     height: 30px;
+    font-size: 8px;
     color: #000000;
 }
