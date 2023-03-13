@@ -449,7 +449,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(1, 107, 185, 0.8);
+    background-color: rgba(1, 107, 185, 1);
     border-radius: 8px;
 }
 
@@ -483,7 +483,7 @@ body {
     align-items: flex-end;
     font-size: 18px;
     font-weight: 600;
-    color: #d1802b;
+    color: #e6a96a;
     margin-left: 50px;
 }
 
@@ -491,7 +491,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     font-style: italic;
-    color: #e2e2e2;
+    color: #fffefa;
     margin-right: 20px;
 }
 
@@ -507,7 +507,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(1, 107, 185, 0.8);
+    background-color: rgba(1, 107, 185, 1);
     border-radius: 8px;
 }
 
@@ -541,7 +541,7 @@ body {
     align-items: flex-end;
     font-size: 18px;
     font-weight: 600;
-    color: #d1802b;
+    color: #e6a96a;
     margin-left: 50px;
 }
 
@@ -549,7 +549,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     font-style: italic;
-    color: #e2e2e2;
+    color: #fffefa;
     margin-right: 20px;
 }
 
@@ -565,7 +565,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:rgba(1, 107, 185, 0.8);
+    background-color:rgba(1, 107, 185, 1);
     border-radius: 8px;
 }
 
@@ -599,7 +599,7 @@ body {
     align-items: flex-end;
     font-size: 18px;
     font-weight: 600;
-    color: #d1802b;
+    color: #e6a96a;
     margin-left: 50px;
 }
 
@@ -607,46 +607,71 @@ body {
     font-size: 18px;
     font-weight: bold;
     font-style: italic;
-    color: #e2e2e2;
+    color: #fffefa;
     margin-right: 20px;
+}
+
+/* 热门分类 */
+.categories {
+    height: 110px;
+    margin-top: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories .pp-cg img {
+    width: 382.8px;
+    height: 108px;
+    border-radius: 8px;
 }
 
 /* 版权 */
 .footer {
     margin-top: 47px;
     padding-top: 30px;
-    height: 417px;
-    background-color: #f2f5faf5;
+    height: 260px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer .left {
-    float: left;
+    margin-left: 50px;
+    width: 350px;
+    height: 250px;
 }
 
 .footer .left p {
     margin: 20px 0 10px;
     font-size: 12px;
-    color: #666;
 }
 
-.footer .left a {
-    display: block;
-    width: 120px;
-    height: 36px;
-    border: 1px solid #00a4ff;
-    text-align: center;
-    line-height: 36px;
-    font-size: 16px;
-    color: #00a4ff;
+.footer .left img {
+    left: 50px;
 }
 
 .footer .right {
-    float: right;
+    width: 500px;
+    height: 115px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.footer .right dl {
-    float: left;
-    margin-left: 120px;
+.footer .right .r-1 {
+    width: 120px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .right h4 {
+    font-size: 16px;
+    color: #cccccc;
+}
+
+.footer .right .f-size {
+    font-size: 12px;
 }
 
 /* 课程模块hot定位小图 */
