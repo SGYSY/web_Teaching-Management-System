@@ -21,18 +21,21 @@
                 <div class="right-2">
                     <div class="right-3">
                         <h1>LOGIN IN</h1>
-                        <input type="text" placeholder="Username">
-                        <input type="text" placeholder="Password">
-                        <div class="right-5">
-                            <input type="text" class="input" placeholder="请输入验证码">
-                            <div class="right-6"></div>
-                        </div>
-                        <div class="right-8">
-                            <span>登录失败</span>
-                        </div>
-                        <div class="right-4">
-                            <button>LOGON IN</button>
-                        </div>
+                        <img src="./images/land2.png" alt="">
+                        <form action="" autocomplete="off">
+                            <input name="username" type="text" placeholder="Username">
+                            <span></span>
+                            <input name="password" type="text" placeholder="Password">
+                            <span></span>
+                            <div class="right-5">
+                                <input name="code" type="text" class="input" placeholder="请输入验证码">
+                                <div class="right-6"></div>
+                            </div>
+                            <span class="fail"></span>
+                            <div class="right-4">
+                                <button>LOGIN IN</button>
+                            </div>
+                        </form>
                         <div class="right-7">
                             <a href="#">忘记密码?点击此处</a>
                             <a href="#">没有账号?点击注册</a>
@@ -42,5 +45,50 @@
             </div>
         </div>
     </div>
+
+    <script>
+        /* 验证用户名 */
+        const username = document.querySelector('[name=username]')
+        //使用change事件 当值发生变化时
+        username.addEventListener('change', verifyName)
+        function verifyName () {
+            const span = username.nextElementSibling
+            const reg = /^[a-zA-Z0-9-_]{6,12}$/
+            if (!reg.test(username.value)) {
+                span.innerText = '输入不合法，请输入6-12位用户名'
+                return false
+            }
+            span.innerText = ''
+            return true
+        }
+
+        /* 验证密码 */
+        const password = document.querySelector('[name=password]')
+        //使用change事件 当值发生变化时
+        password.addEventListener('change', verifyPwd)
+        function verifyPwd () {
+            const span = password.nextElementSibling
+            const abc = /^[a-zA-Z0-9-_]{6,20}$/
+            if (!abc.test(password.value)) {
+                span.innerText = '输入不合法，请输入6-20位密码'
+                return false
+            }
+            span.innerText = ''
+            return true
+        }
+
+        /* 点击提交跳转首页 */
+        const form = document.querySelector('form')
+        form.addEventListener('submit', function (e) {
+            const fail = document.querySelector('.fail')
+            e.preventDefault()
+            if(verifyName() && verifyPwd()) {
+                localStorage.setItem('hy-uname', username.value)
+                location.href = './index.html'
+            }else {
+                fail.innerText = '登录失败'
+            }
+        })
+    </script>
 </body>
 </html>

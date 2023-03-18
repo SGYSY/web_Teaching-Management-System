@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3932032 */
+  src: url('iconfont.woff2?t=1679124168135') format('woff2'),
+       url('iconfont.woff?t=1679124168135') format('woff'),
+       url('iconfont.ttf?t=1679124168135') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tuichudenglu:before {
+  content: "\e631";
+}
+
+.icon-12:before {
+  content: "\e60b";
+}
+
+.icon-tuijian:before {
+  content: "\e63b";
+}
+
+.icon-zuoyeguanli:before {
+  content: "\e716";
+}
+
+.icon-shuxue1:before {
+  content: "\e645";
+}
+
+.icon-yingyu1:before {
+  content: "\e652";
+}
+
+.icon-yuwen1:before {
+  content: "\e654";
+}
+
+.icon-shuxue-tianchong:before {
+  content: "\e65c";
+}
+
+.icon-yingyu-tianchong:before {
+  content: "\e65e";
+}
+
+.icon-yuwen-tianchong:before {
+  content: "\e65f";
+}
+
+.icon-zhengzhi1:before {
+  content: "\e655";
+}
+
+.icon-shengwujishu:before {
+  content: "\e628";
+}
+
+.icon-yuwen:before {
+  content: "\e640";
+}
+
+.icon-wenwu:before {
+  content: "\e756";
+}
+
+.icon-physics-world:before {
+  content: "\e63d";
+}
+
+.icon-shuxue:before {
+  content: "\e63e";
+}
+
+.icon-yingyu:before {
+  content: "\e63f";
+}
+
+.icon-wenwuguji:before {
+  content: "\e673";
+}
+
+.icon-danganwenwu:before {
+  content: "\e619";
+}
+
+.icon-cup:before {
+  content: "\e887";
+}
+
+.icon-earth-full:before {
+  content: "\e9ee";
+}
+

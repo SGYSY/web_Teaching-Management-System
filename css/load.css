@@ -102,6 +102,13 @@
     flex-direction: column;
     align-items: center;
 }
+
+.right-3 img {
+    width: 111.4px;
+    height: 54.2px;
+    margin-bottom: 10px;
+}
+
 .right-4 {
     display: flex;
     justify-content: center;
@@ -113,9 +120,11 @@
 h1 {
     display: block;
     width: 100%;
-    height: 62px;
+    height: 55px;
     text-align: center;
     color: #000000;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 p {
@@ -125,8 +134,9 @@ p {
 input {
     border-radius: 5px;
     border-style: hidden;
+    margin-top: 10px;
     margin-left: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding-left: 10px;
     outline: none;
     border: #efefef;
@@ -151,7 +161,7 @@ input {
     border-radius: 5px;
     border-style: hidden;
     margin-left: 40px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-right: 20px;
     padding-left: 10px;
     outline: none;
@@ -185,14 +195,6 @@ button {
     justify-content: space-between;
 }
 
-.right-8 {
-    width: 200px;
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .right-8 span {
     color: red;
     font-size: 10px;
@@ -205,4 +207,15 @@ a {
     height: 30px;
     font-size: 8px;
     color: #000000;
+}
+
+span {
+    font-size: 8px;
+    color: red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -7,7 +7,7 @@
     <title>云平台</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./iconfont/iconfont.css">
-    <link rel="stylesheet" href="./iconfont2/iconfont.css">
+    <link rel="stylesheet" href="./iconfont3/iconfont.css">
 </head>
 <body>
     <div class="container">
@@ -59,7 +59,7 @@
                 <!-- 用户 -->
                 <div class="user">
                     <img src="./images/user.png" alt="">
-                    <span>Siyu YanYan</span>
+                    <a href="./index.html"><span class="user-name">登录</span></a>
                 </div>
             </div>
         </div>
@@ -68,7 +68,7 @@
         <div class="sidebar">
             <ul class="sidebar-list">
                 <li class="sidecourse"><div class="iconfont icon-zuoyeguanli"></div><a href="#">课程</a></li>
-                <li><div class="iconfont icon-tuijian"></div><a href="#">推荐</a></li>
+                <li><div class="iconfont icon-tuichudenglu" name= "out"></div><a href="#">退出</a></li>
                 <li><div class="iconfont icon-12"></div><a href="#">顶部</a></li>
             </ul>
         </div>
@@ -399,6 +399,25 @@
             } else {
                 header.classList.remove('fixed')
             }
+        })
+
+        /* 渲染用户名 */
+        const userName = document.querySelector('.user-name')
+        function render() {
+            const uname = localStorage.getItem('hy-uname')
+            if (!uname) {
+                userName.innerHTML = '<a href="./load.html">登录</a>'
+            }else {
+                userName.innerHTML = `<a href="javascript:;">${uname}</a>`
+            }
+        }
+        render()
+
+        /* 退出登录 */
+        const out = document.querySelector('[name=out]')
+        out.addEventListener('click', function () {
+            localStorage.removeItem('hy-uname')
+            render()
         })
     </script>
 </body>
