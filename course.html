@@ -29,7 +29,7 @@
                             <a href="file:///C:/Users/YANSIYU/Desktop/Service/course.html#">课程管理</a>
                         </li>
                         <li>
-                            <a href="#">用户管理</a>
+                            <a href="./user.html">用户管理</a>
                         </li>
                         <li>
                             <a href="#">排课管理</a>
@@ -59,7 +59,7 @@
                 <!-- 用户 -->
                 <div class="user">
                     <img src="./images/user.png" alt="">
-                    <span>Siyu YanYan</span>
+                    <a href="javascript:;"><span class="user-name">登录</span></a>
                 </div>
             </div>
         </div>
@@ -237,6 +237,18 @@
                 header.classList.remove('fixed')
             }
         })
+
+        /* 渲染用户名 */
+        const userName = document.querySelector('.user-name')
+        function render() {
+            const uname = localStorage.getItem('hy-uname')
+            if (!uname) {
+                userName.innerHTML = '<a href="./load.html">登录</a>'
+            }else {
+                userName.innerHTML = `<a href="javascript:;">${uname}</a>`
+            }
+        }
+        render()
     </script>
 </body>
 </html>

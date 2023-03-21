@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云平台注册页面</title>
+    <link rel="stylesheet" href="./css/sign.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="left-1">
+                <div class="left-2">sign in to explore <br> the vast array of courses</div>
+                <div class="left-3">LEARN MORE</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-1"></div>
+        </div>
+        <div class="right-2">
+            <div class="right-3">
+                <h1>SIGN IN</h1>
+                <form action="" autocomplete="off">
+                    <input name="username" type="text" placeholder="Username">
+                    <span class="one"></span>
+                    <input name="phone" type="text" placeholder="Phone">
+                    <span class="two"></span>
+                    <div class="message">
+                        <input name="message" type="text" placeholder="Message">
+                        <a href="javascript:;" class="code">发送验证码</a>
+                    </div>
+                    <span></span>
+                    <input name="password" type="text" placeholder="Password">
+                    <span class="three"></span>
+                    <input name="confirm" type="text" placeholder="Confirm">
+                    <span class="four"></span>
+                    <span class="fail"></span>
+                    <div class="right-4">
+                        <button>SIGN IN</button>
+                    </div>
+                </form>
+                <div class="right-7">
+                    <a href="./load.html">已有账号，点击登录</a>
+                    <a href="./index.html">游客登陆，点击此处</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* 验证用户名 */
+        const username = document.querySelector('[name=username]')
+        //使用change事件 当值发生变化时
+        username.addEventListener('change', verifyName)
+        function verifyName () {
+            const span = document.querySelector('.one')
+            const reg = /^[a-zA-Z0-9-_]{6,12}$/
+            if (!reg.test(username.value)) {
+                span.innerText = '输入不合法，请输入6-12位用户名'
+                return false
+            }
+            span.innerText = ''
+            return true
+        }
+
+        /* 发送短信验证 */
+        const code = document.querySelector('.code')
+        let flag = true
+        code.addEventListener('click', function () {
+            if (flag) {
+                flag = false
+                let i = 60 
+                code.innerHTML = `${i}秒后重新获取`
+                let timeId = setInterval (function () {
+                    i--
+                    code.innerHTML = `${i}秒后重新获取`
+                    if (i === 0) {
+                        clearInterval(timeId)
+                        code.innerHTML = "重新获取"
+                        flag = true
+                    }
+                }, 1000)
+            }
+        })
+
+        /* 验证手机号 */
+        const phone = document.querySelector('[name=phone]')
+        //使用change事件 当值发生变化时
+        phone.addEventListener('change', verifyPhone)
+        function verifyPhone () {
+            const span = document.querySelector('.two')
+            const phe = /^1(3\d|4[5-9]|5[0-35-9]|6[567]|7[0-8]|8\d|9[0-35-9])\d{8}$/
+            if (!phe.test(phone.value)) {
+                span.innerText = '输入不合法,请输入11位手机号'
+                return false
+            }
+            span.innerText = ''
+            return true
+        }
+
+        /* 验证密码 */
+        const password = document.querySelector('[name=password]')
+        //使用change事件 当值发生变化时
+        password.addEventListener('change', verifyPwd)
+        function verifyPwd () {
+            const span = document.querySelector('.three')
+            const abc = /^[a-zA-Z0-9-_]{6,20}$/
+            if (!abc.test(password.value)) {
+                span.innerText = '输入不合法，请输入6-20位密码'
+                return false
+            }
+            span.innerText = ''
+            return true
+        }
+
+        /* 密码发生变化 */
+        const confirm = document.querySelector('[name=confirm]')
+        //使用change事件 当值发生变化时
+        confirm.addEventListener('change', verifyCon)
+        function verifyCon () {
+            const span = document.querySelector('.four')
+            if (confirm.value !== password.value) {
+                span.innerText = '两次密码输入不一致'
+                return false
+            }
+            span.innerText = ''
+            return true
+        }
+
+        /* 点击提交跳转首页 */
+        const form = document.querySelector('form')
+        form.addEventListener('submit', function (e) {
+            const fail = document.querySelector('.fail')
+            e.preventDefault()
+            if(verifyName() && verifyPwd() && verifyPhone()) {
+                localStorage.setItem('hy-uname', username.value)
+                location.href = './load.html'
+            }else {
+                fail.innerText = '登录失败'
+            }
+        })
+    </script>
+</body>
+</html>

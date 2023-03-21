@@ -1,0 +1,235 @@
+/* 表单界面 */
+.table1 {
+    position: relative;
+    top: 130px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 8px;
+}
+
+th {
+    height: 30px;
+    line-height: 30px;
+}
+
+/* 添加面板界面 */
+.panel1-primary {
+    background-color: #016bb9;
+    position: relative;
+    top: 100px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.panel1-heading {
+    margin-left: 10px;
+}
+
+.panel1-body {
+    margin-top: 10px;
+    display: flex;
+    height: 30px;
+    justify-content: space-around;
+}
+
+.panel1-body button {
+    margin-top: 10px;
+    height: 20px;
+    width: 40px;
+}
+
+.input-group-addon1 {
+    background-color: #bfbfbf;
+    margin-right: 10px;
+    height: 20px;
+}
+
+.input-group1 {
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+.input-group1 input {
+    height: 30px;
+    border: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-group1 input::placeholder {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+/* index.css是用来美化首页的 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 内减模式 */
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth       ;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.clearfix:before,.clearfix:after {
+    content: "";
+    display: table;
+}
+ .clearfix:after {
+    clear: both;
+ }
+
+body {
+    background-color: #f2f5faf5;
+}
+
+.container {
+    position: relative;
+}
+
+/* 版心 */
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部 */
+.header {
+    width: 100%;
+    height: 80px;
+    margin: 0, auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.header .header-wrapper {
+    width: 1200px;
+    height: 80px;
+    margin: 0, auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+/* 导航 */
+.nav {
+    margin-left: 40px;
+    height: 42px;
+}
+
+.nav .tool li {
+    margin-right: 10px;
+}
+
+.nav .tool li a {
+    display: block;
+    padding: 0 5px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    color: #050505;
+}
+
+.nav .tool li a:hover {
+    color: #016bb9;
+}
+
+.nav .tool {
+    display: flex;
+}
+
+/* 搜索 */
+.search {
+    width: 230px;
+    height: 40px;
+    position: relative;
+    border: 1px solid #016bb9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 18px;
+}
+
+.search input {
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    padding-left: 20px;
+    width: 170px;
+    height: 33px;
+    border: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.search input:focus {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.search .iconfont {
+    position: absolute;
+    left: 185px;
+    line-height: 40px;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+/*控制placeholder的样式*/
+.search input::placeholder {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.search button {
+    font-size: 14px;
+}
+
+.search .result-list {
+    display: none;
+    width: 170px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    position: absolute;
+    top: 38px;
+    left: 10px;
+    z-index: 5;
+    border-radius: 5px;
+    border: 1px solid #016bb9;
+    
+}
+
+.past {
+    color: #016bb9;
+}
+
+/* 用户 */
+.user {
+    margin-right: 10px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.user img {
+    /*调节图片竖直对齐方式*/
+    vertical-align: middle;
+}
