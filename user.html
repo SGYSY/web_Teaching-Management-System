@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/user.css">
     <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./iconfont3/iconfont.css">
 </head>
 <body>
     <div class="container">
@@ -112,6 +113,37 @@
             </tbody>
         </table>
     </div>
+    
+    <!-- 侧边栏 -->
+    <div class="sidebar">
+        <ul class="sidebar-list">
+            <li class="sidecourse"><div class="iconfont icon-zuoyeguanli"></div><a href="#">课程</a></li>
+            <li><div class="iconfont icon-tuichudenglu" name= "out"></div><a href="#">退出</a></li>
+            <li><div class="iconfont icon-12"></div><a href="#">顶部</a></li>
+        </ul>
+    </div>
+
+    <div class="right">
+        <h2>我的课程表</h2>
+        <div class="content">
+            <dl>
+                <dt>继续学习程序设计语言
+                    <dd>正在学习-使用对象</dd>
+                </dt>
+            </dl>
+            <dl>
+                <dt>继续学习程序设计语言
+                    <dd>正在学习-使用对象</dd>
+                </dt>
+            </dl>
+            <dl>
+                <dt>继续学习程序设计语言
+                    <dd>正在学习-使用对象</dd>
+                </dt>
+            </dl>
+        </div>
+        <a href="#" class="more">今日课程</a>
+    </div>
 
     <script>
         /* 数据渲染 */
@@ -200,6 +232,25 @@
             }
         }
         render()
+
+        /* 侧边栏课程隐藏效果 */
+        const course = document.querySelector('.sidecourse')
+        const right = document.querySelector('.right')
+        course.addEventListener('mouseenter', function () {
+            right.style.display = 'block'
+            right.style.opacity = 1
+        })
+        course.addEventListener('mouseleave', function () {
+            right.style.display = 'none'
+            right.style.opacity = 0
+        })
+
+        /* 退出登录 */
+        const out = document.querySelector('[name=out]')
+        out.addEventListener('click', function () {
+            localStorage.removeItem('hy-uname')
+            render()
+        })
     </script>
 </body>
 </html>

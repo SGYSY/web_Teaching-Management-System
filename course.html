@@ -7,7 +7,7 @@
     <title>课程管理</title>
     <link rel="stylesheet" href="./css/course.css">
     <link rel="stylesheet" href="./iconfont/iconfont.css">
-    <link rel="stylesheet" href="./iconfont1/iconfont.css">
+    <link rel="stylesheet" href="./iconfont3/iconfont.css">
 </head>
 <body>
     <div class="container">
@@ -78,6 +78,15 @@
                 <button class="next">&gt;</button>
                 <button class="prev">&lt;</button>
             </div>
+        </div>
+
+        <!-- 侧边栏 -->
+        <div class="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidecourse"><div class="iconfont icon-zuoyeguanli"></div><a href="#">课程</a></li>
+                <li><div class="iconfont icon-tuichudenglu" name= "out"></div><a href="#">退出</a></li>
+                <li><div class="iconfont icon-12"></div><a href="#">顶部</a></li>
+            </ul>
         </div>
 
         <!-- 课程推荐 -->
@@ -249,6 +258,25 @@
             }
         }
         render()
+
+        /* 侧边栏课程隐藏效果 */
+        const course = document.querySelector('.sidecourse')
+        const right = document.querySelector('.right')
+        course.addEventListener('mouseenter', function () {
+            right.style.display = 'block'
+            right.style.opacity = 1
+        })
+        course.addEventListener('mouseleave', function () {
+            right.style.display = 'none'
+            right.style.opacity = 0
+        })
+
+        /* 退出登录 */
+        const out = document.querySelector('[name=out]')
+        out.addEventListener('click', function () {
+            localStorage.removeItem('hy-uname')
+            render()
+        })
     </script>
 </body>
 </html>
