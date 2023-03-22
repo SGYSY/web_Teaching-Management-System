@@ -4,6 +4,8 @@
     display: flex;
 }
 
+
+/* 左半部分登录功能 */
 .container .left {
     width: 50%;
     height: 100%;
@@ -11,9 +13,9 @@
     position: relative;
 }
 
-.container .left .left-1 {
-    width: 530px;
-    height: 525px;
+.container .left .left-top {
+    width: 510px;
+    height: 475px;
     background-color: #fff;
     border-radius: 20px 0 0 20px;
     position: absolute;
@@ -25,19 +27,50 @@
                 -10px 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.container .left .left-1 .left-2 {
+.left-title {
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    left: 180px;
+    top: 60px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: #000000;
+}
+
+.left-log {
+    position: absolute;
+    left: 170px;
+    top: 310px;
+    width: 240px;
+    height: 60px;
+    background-color: rgb(178, 204, 250);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    position: absolute;
+    left: 225px;
+    top: 190px;
+    width: 133.68px;
+    height: 65.04px;
+}
+
+.container .left .left-top .left-wd {
     width: 140px;
     height: 50px;
     position: absolute;
-    left: 40px;
-    bottom: 70px;
+    left: 220px;
+    top: 130px;
     margin-bottom: 5px;
-    font-size: 8px;
+    font-size: 10px;
     text-align: center;
     color: #8f9296f5;
 }
 
-.container .left .left-1 .left-3 {
+.container .left .left-top .left-btm {
     width: 130px;
     height: 30px;
     margin-top: 0;
@@ -52,16 +85,18 @@
     line-height: 30px;
 }
 
+
+/* 右半部分背景 */
 .container .right {
     width: 50%;
     height: 100%;
-    background-color: rgb(52, 66, 99);
+    background-color: rgb(178, 204, 250);
     position: relative;
 }
 
-.container .right .right-1 {
-    width: 530px;
-    height: 525px;
+.container .right .right-top {
+    width: 510px;
+    height: 475px;
     background-color: #fff;
     border-radius: 0 20px 20px 0;
     position: absolute;
@@ -74,7 +109,7 @@
                 -10px 0 10px rgba(0, 0, 0, 0);
 }
 
-.container .right .right-1::before {
+.container .right .right-top::before {
     content: "";
     position: absolute;
     left: -10px; 
@@ -84,21 +119,23 @@
     background-color: white; 
   }
 
-.right-2 {
+/* 中心部分注册功能 */
+.cube {
     width: 400px;
-    height: 500px;
-    background-color: #fff;
-    border-radius: 5px;
+    height: 600px;
+    background-color: rgba(52, 66, 99, 0.9);
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     z-index: 5;
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 65%;
     transform: translate(-50%, -50%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.right-3 {
+.cube-panel {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -106,22 +143,7 @@
     justify-content: space-around;
 }
 
-.right-3 img {
-    width: 89.12px;
-    height: 43.36px;
-    margin-bottom: 10px;
-}
-
-.left-1 img {
-    margin-left: 28.3px;
-    margin-top: 27.6px;
-    width: 473.4px;
-    height: 469.8px;
-}
-
-
-
-.right-4 {
+.cube-btn {
     display: flex;
     justify-content: center;
     width: 250px;
@@ -133,7 +155,7 @@ h1 {
     width: 100%;
     height: 55px;
     text-align: center;
-    color: #000000;
+    color: #fff;
     margin-top: 10px;
     margin-bottom: 0;
 }
@@ -166,25 +188,20 @@ button {
     height: 50px;
     font-size: 16px;
     font-weight: 500;
-    color: #8f9296f5;
-    background-color: rgb(52, 66, 99);
+    color: #000000;
+    background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.right-7 {
-    margin-top: 10px;
-    width: 320px;
-    display: flex;
-    justify-content: space-between;
-}
-
 a {
+    margin-left: 30px;
+    margin-top: 15px;
     display: block;
-    margin-top: 10px;
-    width: 110px;
     height: 30px;
-    font-size: 8px;
+    font-size: 20px;
+    font-weight: 500;
     color: #000000;
+    text-decoration: none;
 }
 
 span {
@@ -224,10 +241,11 @@ form {
 
 .code {
     display: block;
-    width: 120px;
+    width: 110px;
     font-size: 13px;
     text-align: right;
-    color: #016bb9;
+    color: #fff;
+    margin-left: 5px;
     margin-top: 7.5px;
     text-decoration: none;
 }

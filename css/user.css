@@ -3,8 +3,15 @@
     position: relative;
     top: 130px;
     height: 50px;
-    background-color: aqua;
+    background-color: #fff;
     border-radius: 8px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.table1-tr {
+    background-color: #016bb9;
+    color: #fff;
 }
 
 th {
@@ -13,35 +20,44 @@ th {
 }
 
 /* 添加面板界面 */
-.panel1-primary {
+.pm-panel {
     background-color: #016bb9;
     position: relative;
     top: 100px;
-    height: 80px;
+    height: 100px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.panel1-heading {
+.pm-panel-heading {
     margin-left: 10px;
 }
 
-.panel1-body {
-    margin-top: 10px;
+.pm-panel-title {
+    color: #fff;
+    font-size: 24px;
+}
+
+.pm-panel-body {
     display: flex;
     height: 30px;
     justify-content: space-around;
 }
 
-.panel1-body button {
-    margin-top: 10px;
-    height: 20px;
+.pm-panel-body button {
+    margin-top: 8px;
+    height: 25px;
     width: 40px;
+    font-size: 14px;
 }
 
 .input-group-addon1 {
-    background-color: #bfbfbf;
     margin-right: 10px;
     height: 20px;
+    color: #000000;
+    font-size: 17px;
 }
 
 .input-group1 {

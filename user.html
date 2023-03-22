@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>用户管理系统</title>
-    <link rel="stylesheet" href="./css/user.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/user.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
 </head>
 <body>
     <div class="container">
@@ -62,12 +63,13 @@
                 </div>
             </div>
         </div>
-    
-        <div class="panel1 panel1-primary wrapper">
-            <div class="panel1-heading">
-                <h3 class="pane1-title">用户管理系统</h3>
+        
+        <!-- 添加表单 -->
+        <div class="pm-panel wrapper">
+            <div class="pm-panel-heading">
+                <div class="pm-panel-title">用户管理系统</div>
             </div>
-            <form class="panel1-body" name="info">
+            <form class="pm-panel-body" name="info">
                 <div class="input-group1">
                     <div class="input-group-addon1">用户名</div>
                     <input type="text" class="urname" id="exampleInputAmount" placeholder="请输入用户名">
@@ -88,14 +90,14 @@
                     <div class="input-group-addon1">电话</div>
                     <input type="text" class="urpho" id="exampleInputAmount" placeholder="请输入dianhua">
                 </div>
-                <button class="btn1">添加</button>
+                <button class="body-btn">添加</button>
             </form>
         </div>
 
-        
+        <!-- 表单 -->
         <table class="table1 table-bordered wrapper">
             <thead>
-                <tr>
+                <tr class="table1-tr">
                     <th>ID</th>
                     <th>用户名</th>
                     <th>学校</th>
