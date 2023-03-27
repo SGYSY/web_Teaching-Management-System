@@ -58,7 +58,7 @@ body {
     margin: 0, auto;
     background-color: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -83,7 +83,7 @@ body {
     padding: 0 5px;
     height: 42px;
     line-height: 42px;
-    font-size: 16px;
+    font-size: 18px;
     color: #050505;
 }
 
@@ -161,6 +161,7 @@ body {
 .user {
     margin-right: 10px;
     height: 42px;
+    width: 150px;
     line-height: 42px;
 }
 
@@ -244,6 +245,8 @@ body {
 .banner .wrapper .left a:hover {
     left: 10px;
 }
+
+/* 通知栏 */
 
 .right {
     margin-top: 50px;

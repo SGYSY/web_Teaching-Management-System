@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>用户管理系统</title>
+    <title>用户云</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/user.css">
     <link rel="stylesheet" href="./iconfont/iconfont.css">
-    <link rel="stylesheet" href="./iconfont3/iconfont.css">
+    <link rel="stylesheet" href="./iconfont4/iconfont.css">
 </head>
 <body>
     <div class="container">
@@ -27,19 +27,16 @@
                 <div class="nav">
                     <ul class="tool">
                         <li>
-                            <a href="file:///C:/Users/YANSIYU/Desktop/Service/course.html#">课程管理</a>
+                            <a href="./course.html">课程云</a>
                         </li>
                         <li>
-                            <a href="#">用户管理</a>
+                            <a href="./work.html">用户云</a>
                         </li>
                         <li>
-                            <a href="#">排课管理</a>
+                            <a href="./work.html">作业云</a>
                         </li>
                         <li>
-                            <a href="#">作业管理</a>
-                        </li>
-                        <li>
-                            <a href="#">实验管理</a>
+                            <a href="#">实验云</a>
                         </li>
                     </ul>
                 </div>
@@ -117,32 +114,32 @@
     <!-- 侧边栏 -->
     <div class="sidebar">
         <ul class="sidebar-list">
-            <li class="sidecourse"><div class="iconfont icon-zuoyeguanli"></div><a href="#">课程</a></li>
+            <li class="sidecourse"><div class="iconfont icon-tongzhi"></div><a href="#">通知</a></li>
             <li><div class="iconfont icon-tuichudenglu" name= "out"></div><a href="#">退出</a></li>
             <li><div class="iconfont icon-12"></div><a href="#">顶部</a></li>
         </ul>
     </div>
 
     <div class="right">
-        <h2>我的课程表</h2>
+        <h2>我的通知</h2>
         <div class="content">
             <dl>
-                <dt>继续学习程序设计语言
-                    <dd>正在学习-使用对象</dd>
+                <dt>课程时间更改！
+                    <dd>xxxxxxxx</dd>
                 </dt>
             </dl>
             <dl>
-                <dt>继续学习程序设计语言
-                    <dd>正在学习-使用对象</dd>
+                <dt>课程地点更改！
+                    <dd>xxxxxxxx</dd>
                 </dt>
             </dl>
             <dl>
-                <dt>继续学习程序设计语言
-                    <dd>正在学习-使用对象</dd>
+                <dt>课程取消！！！
+                    <dd>xxxxxxxx</dd>
                 </dt>
             </dl>
         </div>
-        <a href="#" class="more">今日课程</a>
+        <a href="#" class="more">今日通知</a>
     </div>
 
     <script>
@@ -233,7 +230,7 @@
         }
         render()
 
-        /* 侧边栏课程隐藏效果 */
+        /* 侧边栏通知隐藏效果 */
         const course = document.querySelector('.sidecourse')
         const right = document.querySelector('.right')
         course.addEventListener('mouseenter', function () {

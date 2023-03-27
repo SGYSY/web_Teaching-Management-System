@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>云平台</title>
-    <link rel="stylesheet" href="./css/course.css">
+    <link rel="stylesheet" href="./css/work.css">
     <link rel="stylesheet" href="./iconfont/iconfont.css">
-    <link rel="stylesheet" href="./iconfont5/iconfont.css">
+    <link rel="stylesheet" href="./iconfont6/iconfont.css">
 </head>
 <body>
     <div class="container">
@@ -26,13 +26,13 @@
                 <div class="nav">
                     <ul class="tool">
                         <li>
-                            <a href="#">课程云</a>
+                            <a href="./course.html">课程云</a>
                         </li>
                         <li>
                             <a href="./user.html">用户云</a>
                         </li>
                         <li>
-                            <a href="./work.html">作业云</a>
+                            <a href="#">作业云</a>
                         </li>
                         <li>
                             <a href="#">实验云</a>
@@ -93,45 +93,38 @@
             <a href="#" class="more">今日通知</a>
         </div>
 
-        <!-- 标签栏 -->
-        <div class="marks">
-            <div class="flex-l">
-                <div class="classtable">
-                    <a href="./schedule.html">
-                        <span class="iconfont icon-kebiao"></span>
-                        <div>我的课表</div>
-                    </a>
+        <!-- 左侧功能栏 -->
+        <div class="left-t">
+            <div class="left-t-1">
+                <div class="ware">
+                    <span class="iconfont icon-jiaoxuekejian"></span>
+                    <div>同步课件</div>
                 </div>
-                <div class="selfclass">
-                    <span class="iconfont icon-gexinghuayonghu"></span>
-                    <div>个性化选课</div>
+                <div class="exam">
+                    <span class="iconfont icon-kaoshi"></span>
+                    <div>课程考试</div>
                 </div>
-                <div class="classchoose">
-                    <span class="iconfont icon-shaixuan"></span>
-                    <div>课程筛选</div>
+                <div class="submit">
+                    <span class="iconfont icon-zuoyerili"></span>
+                    <div>课程作业</div>
                 </div>
-                <div class="classdiscuss">
-                    <a href="./discuss.html">
-                        <span class="iconfont icon-taolunqu"></span>
-                        <div>课程讨论</div>
-                    </a>
+                <div class="question">
+                    <span class="iconfont icon-cuoti"></span>
+                    <div>错题反馈</div>
                 </div>
-                <div class="classdiscuss-1">
-                    <div>></div>
-                    <div>线性代数</div>
-                </div>
-                <div class="classdiscuss-2">
-                    <div>></div>
-                    <div>大学物理</div>
-                </div>
-                <div class="classdiscuss-3">
-                    <div>></div>
-                    <div>大学英语</div>
-                </div>
+            </div>
+            <div class="left-t-2"></div>
+        </div>
+
+        <!-- 作业消息栏 -->
+        <div class="left-b">
+            <div class="left-b-1">
+                <div class="left-b-2">作业批改提醒!</div>
+                <div class="left-b-3">考试变更提醒!</div>
             </div>
         </div>
     </div>
-
+        
     <script>
         /* 搜索栏文字输入和历史记录 */
         const input = document.querySelector('[type=text]')
@@ -195,4 +188,5 @@
             render()
         })
     </script>
-</body>
+</body>    
+    
