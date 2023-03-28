@@ -299,9 +299,9 @@ body {
     font-weight: 500;
     border-bottom: 1px solid #e5e5e5;
     color: #fff;
-}
+} 
 
-.selfclass {
+.selfclass a {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -310,6 +310,7 @@ body {
     font-size: 18px;
     font-weight: 500;
     border-bottom: 1px solid #e5e5e5;
+    color: #fff;
 }
 
 .selfclass span {

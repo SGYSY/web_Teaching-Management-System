@@ -301,7 +301,7 @@ body {
     color: #fff;
 }
 
-.selfclass {
+.selfclass a {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -311,6 +311,8 @@ body {
     font-weight: 500;
     margin-left: 10px;
     border-bottom: 1px solid #e5e5e5;
+    color: #fff;
+    margin-right: 10px;
 }
 
 .classchoose {
