@@ -289,6 +289,7 @@ body {
     align-items: center;
     color: #000;
     background-color: #ffffffb0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .flex-pic {
@@ -376,9 +377,9 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #016cb9fa;
+    background-color: #efefef;
     border-radius: 5px;
-    color: #fff;
+    color: #000;
 }
 
 .classdiscuss-1 {
@@ -418,4 +419,47 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-right: 0;
+}
+
+/* 轮播图 */
+.banner {
+    position: absolute;
+    top: 180px;
+    left: 380px;
+    width: 960px;
+    height: 420px;
+}
+
+.b-c {
+    width: 960px;
+    height: 420px;
+}
+
+.toggle button {
+    width: 28px;
+    height: 28px;
+    appearance: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.toggle .prev {
+    position: absolute;
+    top: 50%;
+    margin-left: 30px;
+}
+
+.toggle .next {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    margin-right: 30px;
+}
+
+.toggle button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
 }

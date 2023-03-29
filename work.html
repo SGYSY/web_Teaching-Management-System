@@ -126,9 +126,73 @@
                 <div class="left-b-3">考试变更提醒!</div>
             </div>
         </div>
+
+        <!-- 轮播图 -->
+        <div class="banner">
+            <div class="b-c">
+                <img src="./images/banner1.jpg" alt="">
+            </div>
+            <div class="toggle">
+                <button class="next">&gt;</button>
+                <button class="prev">&lt;</button>
+            </div>
+        </div>
     </div>
         
     <script>
+        /* 轮播图 */
+        const sliderData = [
+            { url: './images/banner1.jpg' },
+            { url: './images/banner2.png' },
+            { url: './images/banner3.png' },
+            { url: './images/banner4.png' },
+        ]
+
+        const img = document.querySelector('.banner .b-c img')
+        /* 两个按钮 */
+        const next = document.querySelector('.next')
+        const prev = document.querySelector('.prev')
+        const slider = document.querySelector('.banner .b-c img')
+        
+        let timeId = 0
+        let i = 0
+
+        /* 两个按钮控制轮播图的切换 */
+        next.addEventListener('click', function(){
+            i++
+            i = i >=sliderData.length ? 0 : i
+            toggle()
+        })
+
+        prev.addEventListener('click', function(){
+            i--
+            i = i < 0 ? sliderData.length - 1 : i
+            toggle()
+        })
+
+        function toggle() {
+            img.src = sliderData[i].url
+            document.querySelector('.slider-indicator .active').classList.remove('active')
+            document.querySelector(`.slider-indicator li:nth-child(${i + 1})`).classList.add('active')
+        }
+
+
+        /* 计时器：轮播图自动切换 */
+        timeId = setInterval(function () {
+            next.click()
+        }, 1000)
+
+        slider.addEventListener('mouseenter', function () {
+            clearInterval(timeId)
+        })
+
+        slider.addEventListener('mouseleave', function () {
+            clearInterval(timeId)
+            timeId = setInterval(function () {
+            next.click()
+        }, 1000)
+        })
+
         /* 搜索栏文字输入和历史记录 */
         const input = document.querySelector('[type=text]')
         const searchul = document.querySelector('.result-list')
