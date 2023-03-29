@@ -277,11 +277,25 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #016bb9;
+    background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    color: #000000;
+    color: #5f5c5c;
     font-size: 18px;
     font-weight: 500;
+}
+
+.flex-pic {
+    width: 150px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #efefef;
+}
+
+.flex-pic img{
+    width: 111.4px;
+    height: 54.2px;
 }
 
 .ware {
@@ -290,7 +304,11 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid #fff;
+}
+
+.ware:hover {
+    color: #000;
+    font-weight: 550;
 }
 
 .exam {
@@ -299,7 +317,11 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid #fff;
+}
+
+.exam:hover {
+    color: #000;
+    font-weight: 550;
 }
 
 .submit {
@@ -308,7 +330,11 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid #fff;
+}
+
+.submit:hover {
+    color: #000;
+    font-weight: 550;
 }
 
 .question {
@@ -317,7 +343,11 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid #fff;
+}
+
+.question:hover {
+    color: #000;
+    font-weight: 550;
 }
 
 /* 作业消息栏 */

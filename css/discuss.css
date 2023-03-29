@@ -16,6 +16,7 @@ li {
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 .clearfix:before,.clearfix:after {
@@ -275,6 +276,7 @@ body {
 
 .flex-l {
     position: absolute;
+    left: 80px;
     top: 100px;
     width: 220px;
     height: 600px;
@@ -285,11 +287,25 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    color: #fff;
+    color: #000;
+    background-color: #ffffffb0;
+}
+
+.flex-pic {
+    width: 150px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #efefef;
 }
 
 
-.classtable a {
+.flex-pic img{
+    width: 111.4px;
+    height: 54.2px;
+}
+
+.classtable a{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -297,8 +313,11 @@ body {
     height: 44px;
     font-size: 18px;
     font-weight: 500;
-    border-bottom: 1px solid #e5e5e5;
-    color: #fff;
+    color: #000;
+} 
+
+.classtable a:hover {
+    background-color: #efefef;
 }
 
 .selfclass a {
@@ -309,10 +328,15 @@ body {
     height: 44px;
     font-size: 18px;
     font-weight: 500;
-    margin-left: 10px;
-    border-bottom: 1px solid #e5e5e5;
-    color: #fff;
-    margin-right: 10px;
+    color: #000;
+}
+
+.selfclass a:hover {
+    background-color: #efefef;
+}
+
+.selfclass span {
+    margin-left: 5px;
 }
 
 .classchoose {
@@ -321,13 +345,16 @@ body {
     align-items: center;
     width: 220px;
     height: 44px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     margin-right: 5px;
-    border-bottom: 1px solid #e5e5e5;
 }
 
-.classdiscuss {
+.classchoose:hover {
+    background-color: #efefef;
+}
+
+.classdiscuss a {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -335,16 +362,27 @@ body {
     height: 44px;
     font-size: 18px;
     font-weight: 500;
-    color: #fff;
-    border-bottom: 1px solid #e5e5e5;
+    color: #000;
 }
 
-.classdiscuss div {
-    color: #000000;
+.classdiscuss a:hover {
+    background-color: #efefef;
+}
+
+.class-fold {
+    width: 170px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #016cb9fa;
+    border-radius: 5px;
+    color: #fff;
 }
 
 .classdiscuss-1 {
-    width: 220px;
+    width: 150px;
     height: 44px;
     font-size: 16px;
     font-weight: 500;
@@ -354,11 +392,10 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-right: 0;
-    border-bottom: 1px solid #e5e5e5;
 }
 
 .classdiscuss-2 {
-    width: 220px;
+    width: 150px;
     height: 44px;
     font-size: 16px;
     font-weight: 500;
@@ -368,11 +405,10 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-right: 0;
-    border-bottom: 1px solid #e5e5e5;
 }
 
 .classdiscuss-3 {
-    width: 220px;
+    width: 150px;
     height: 44px;
     font-size: 16px;
     font-weight: 500;
@@ -383,4 +419,3 @@ body {
     align-items: center;
     margin-right: 0;
 }
-

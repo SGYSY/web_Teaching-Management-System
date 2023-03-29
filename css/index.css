@@ -480,7 +480,6 @@ body {
     width: 1200px;
     height: 600px;
     margin-top: 20px;
-    background-color: #016bb9;
 }
 
 .show-user {
@@ -488,7 +487,20 @@ body {
     width: 1200px;
     height: 600px;
     margin-top: 20px;
-    background-color: #016bb9;
+}
+
+.show-work {
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    margin-top: 20px;
+}
+
+.show-lab {
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    margin-top: 20px;
 }
 
 .words1 {
@@ -567,7 +579,7 @@ body {
 
 .btn2 {
     align-items: center;
-    background-image: linear-gradient(-56deg,#54d4f4 5%,#fab28d);
+    background-image: linear-gradient(-56deg,#54d4f4 5%,#797eff);
     border-radius: 25px;
     color: #fff;
     cursor: pointer;
@@ -585,5 +597,103 @@ body {
 }
 
 .btn2 a {
+    color: #fff;
+}
+
+.words3 {
+    position: absolute;
+    top: 220px;
+    left: 350px;
+    width: 800px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title3 {
+    font-size: 42px;
+    font-weight: 600;
+    height: 60px;
+    width: 800px;
+    line-height: 60px;
+}
+
+.para3 {
+    height: 80px;
+    width: 800px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.btn3 {
+    align-items: center;
+    background-image: linear-gradient(-56deg,#54d4f4 5%,#f68dfa);
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    height: 50px;
+    justify-content: center;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left: 100px;
+    text-align: center;
+    width: 152px;
+}
+
+.btn3 a {
+    color: #fff;
+}
+
+.words4 {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    width: 800px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title4 {
+    font-size: 42px;
+    font-weight: 600;
+    height: 60px;
+    width: 800px;
+    line-height: 60px;
+}
+
+.para4 {
+    height: 80px;
+    width: 800px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.btn4 {
+    align-items: center;
+    background-image: linear-gradient(-56deg,#54d4f4 5%,#f68dfa);
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    height: 50px;
+    justify-content: center;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left: 100px;
+    text-align: center;
+    width: 152px;
+}
+
+.btn4 a {
     color: #fff;
 }
