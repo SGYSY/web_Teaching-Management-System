@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>云平台</title>
+    <title>comments</title>
     <link rel="stylesheet" href="./css/discuss.css">
     <link rel="stylesheet" href="./iconfont/iconfont.css">
     <link rel="stylesheet" href="./iconfont5/iconfont.css">
+    <!-- 引入 Gitalk CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+    <!-- 引入 Gitalk JS -->
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -137,9 +142,37 @@
                 </div>
             </div>
         </div>
+        <div id="gitalk-container"></div>
     </div>
 
     <script>
+        /* 评论区 */
+        var gitalk = new Gitalk({
+        // Gitalk 需要您在 GitHub 上创建的 OAuth App 的 Client ID
+        clientID: 'b8d7c73c793a5b7c0cb0',
+
+        // Gitalk 需要您在 GitHub 上创建的 OAuth App 的 Client Secret
+        clientSecret: '33a5d61fe2be6d2bd2f992dfcabfb03f11c09c65',
+
+        // 您在 GitHub 上存储评论数据的仓库名称
+        repo: 'SGYSY/comments',
+
+        // 存储评论的 GitHub issue 标签
+        //issueID: 'Gitalk',
+
+        // 您的网站或博客的名称
+        owner: 'SGYSY',
+
+        // 您的网站或博客的管理员名称
+        admin: ['SGYSY'],
+
+        // 在哪里显示评论框，容器的 ID
+        id: 'gitalk-container',
+        distractionFreeMode: false,
+        redirectUrl: 'http://119.91.207.210:8080/A19/discuss.html'
+        });
+        gitalk.render(document.getElementById('gitalk-container'));
+
         /* 搜索栏文字输入和历史记录 */
         const input = document.querySelector('[type=text]')
         const searchul = document.querySelector('.result-list')

@@ -420,3 +420,11 @@ body {
     align-items: center;
     margin-right: 0;
 }
+
+#gitalk-container {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 100px;
+    left: 350px;
+}

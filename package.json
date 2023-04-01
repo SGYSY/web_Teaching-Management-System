@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "valine": "^1.5.1"
+  }
+}
