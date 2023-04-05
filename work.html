@@ -130,7 +130,7 @@
         <!-- 轮播图 -->
         <div class="banner">
             <div class="b-c">
-                <img src="./images/banner1.jpg" alt="">
+                <img src="./images/work1.png" alt="">
             </div>
             <div class="toggle">
                 <button class="next">&gt;</button>
@@ -142,10 +142,10 @@
     <script>
         /* 轮播图 */
         const sliderData = [
-            { url: './images/banner1.jpg' },
-            { url: './images/banner2.png' },
-            { url: './images/banner3.png' },
-            { url: './images/banner4.png' },
+            { url: './images/work1.png' },
+            { url: './images/work2.png' },
+            { url: './images/work3.png' },
+            { url: './images/work4.png' },
         ]
 
         const img = document.querySelector('.banner .b-c img')
@@ -172,8 +172,6 @@
 
         function toggle() {
             img.src = sliderData[i].url
-            document.querySelector('.slider-indicator .active').classList.remove('active')
-            document.querySelector(`.slider-indicator li:nth-child(${i + 1})`).classList.add('active')
         }
 
 

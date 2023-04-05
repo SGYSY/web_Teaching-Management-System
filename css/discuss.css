@@ -264,18 +264,8 @@ body {
 }
 
 /* 标签栏 */
-.marks {
-    position: fixed;
-    left: 30px;
-    height: 100%;
-    width: 250px;
-    background-color: rgba(32,33,35,0.9);
-    display: flex;
-    justify-content: center;
-}
-
 .flex-l {
-    position: absolute;
+    position: fixed;
     left: 80px;
     top: 100px;
     width: 220px;

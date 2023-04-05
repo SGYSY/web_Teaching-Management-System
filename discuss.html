@@ -4,15 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>comments</title>
+    <title>课程讨论</title>
     <link rel="stylesheet" href="./css/discuss.css">
     <link rel="stylesheet" href="./iconfont/iconfont.css">
     <link rel="stylesheet" href="./iconfont5/iconfont.css">
-    <!-- 引入 Gitalk CSS -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"> -->
-
-    <!-- 引入 Gitalk JS -->
-    <!-- <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script> -->
 </head>
 <body>
     <div class="container">
@@ -142,51 +137,27 @@
                 </div>
             </div>
         </div>
-        <div id="disqus_thread" data-disqus-identifier="siyuyanyan"></div>
+        <div id="disqus_thread" data-disqus-identifier="siyuyanyan"></div> 
     </div>
 
     <script>
-        /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    
-    var disqus_config = function () {
-    this.page.url = 'http://119.91.207.210:8080/A19/';  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = siyuyanyan; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://http-119-91-207-210-8080-a19.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
         /* 评论区 */
-        //var gitalk = new Gitalk({
-        // Gitalk 需要您在 GitHub 上创建的 OAuth App 的 Client ID
-        //clientID: 'b8d7c73c793a5b7c0cb0',
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
 
-        // Gitalk 需要您在 GitHub 上创建的 OAuth App 的 Client Secret
-        //clientSecret: '33a5d61fe2be6d2bd2f992dfcabfb03f11c09c65',
+        var disqus_config = function () {
+        this.page.url = "http://119.91.207.210:8080/A19/";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "siyuyanyan"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
 
-        // 您在 GitHub 上存储评论数据的仓库名称
-        //repo: 'SGYSY/comments',
-
-        // 存储评论的 GitHub issue 标签
-        //issueID: 'Gitalk',
-
-        // 您的网站或博客的名称
-        //owner: 'SGYSY',
-
-        // 您的网站或博客的管理员名称
-        //admin: ['SGYSY'],
-
-        // 在哪里显示评论框，容器的 ID
-        //id: 'gitalk-container',
-        //distractionFreeMode: false,
-        //redirectUrl: 'http://119.91.207.210:8080/A19/discuss.html'
-        ///});
-        //gitalk.render(document.getElementById('gitalk-container'));
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://http-119-91-207-210-8080-a19.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })(); 
+        
 
         /* 搜索栏文字输入和历史记录 */
         const input = document.querySelector('[type=text]')
