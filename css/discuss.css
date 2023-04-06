@@ -70,6 +70,7 @@ body {
 }
 /* 导航 */
 .nav {
+    width: 270px;
     margin-left: 40px;
     height: 42px;
 }
@@ -83,7 +84,7 @@ body {
     padding: 0 5px;
     height: 42px;
     line-height: 42px;
-    font-size: 18px;
+    font-size: 20px;
     color: #050505;
 }
 
@@ -93,6 +94,7 @@ body {
 
 .nav .tool {
     display: flex;
+    justify-content: space-between;
 }
 
 /* 搜索 */
@@ -353,11 +355,8 @@ body {
     height: 44px;
     font-size: 18px;
     font-weight: 500;
-    color: #000;
-}
-
-.classdiscuss a:hover {
-    background-color: #efefef;
+    color: #fff;
+    background-color: #016bb9;
 }
 
 .class-fold {

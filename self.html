@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>云平台</title>
-    <link rel="stylesheet" href="./css/work.css">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="./css/self.css">
     <link rel="stylesheet" href="./iconfont/iconfont.css">
-    <link rel="stylesheet" href="./iconfont6/iconfont.css">
+    <link rel="stylesheet" href="./iconfont8/iconfont.css">
 </head>
 <body>
     <div class="container">
@@ -29,7 +29,7 @@
                             <a href="./course.html">课程云</a>
                         </li>
                         <li>
-                            <a href="#">作业云</a>
+                            <a href="./work.html">作业云</a>
                         </li>
                         <li>
                             <a href="#">实验云</a>
@@ -52,9 +52,7 @@
         
                 <!-- 用户 -->
                 <div class="user">
-                    <a href="./self.html">
-                        <img src="./images/user.png" alt="">
-                    </a>
+                    <img src="./images/user.png" alt="">
                     <a href="javascript:;"><span class="user-name">登录</span></a>
                 </div>
             </div>
@@ -92,104 +90,67 @@
             <a href="#" class="more">今日通知</a>
         </div>
 
-        <!-- 左侧功能栏 -->
-        <div class="left-t">
-            <div class="left-t-1">
-                <div class="flex-pic">
-                    <img src="./images/land2.png" alt="">
+        <!-- 个人信息页面 -->
+        <div class="t-info">
+            <div class="info wrapper">
+                <div class="info1">
+                    <img src="./images/self1.png" alt="">
+                    <div class="users-text">
+                        <div class="users-name">登录</div>
+                        <div class="users-id">学生</div>
+                        <div class="users-fan">
+                            <span>
+                                "关注0人"
+                            </span>
+                            |
+                            <span>
+                                "粉丝0人"
+                            </span>
+                        </div>
+                    </div>
                 </div>
-                <div class="ware">
-                    <span class="iconfont icon-jiaoxuekejian"></span>
-                    <div>同步课件</div>
+                <div class="info2">
+                    <div class="info2-1">
+                        <div class="iconfont icon-huifu"></div>
+                        <div class="info2-1-1">主题/回复</div>
+                    </div>
+                    |
+                    <div class="info2-2">
+                        <div class="iconfont icon-tuijian"></div>
+                        <div class="info2-2-1">获赞数量</div>
+                    </div>
+                    |
+                    <div class="info2-3">
+                        <div class="iconfont icon-shichang"></div>
+                        <div class="info2-3-1">学习时长</div>
+                    </div>
+                </div>    
+                <div class="info3">
+                    <div class="iconfont icon-31shezhi"></div>
+                    <span>个人设置</span>
                 </div>
-                <div class="exam">
-                    <span class="iconfont icon-kaoshi"></span>
-                    <div>课程考试</div>
-                </div>
-                <div class="submit">
-                    <span class="iconfont icon-zuoyerili"></span>
-                    <div>课程作业</div>
-                </div>
-                <div class="question">
-                    <span class="iconfont icon-cuoti"></span>
-                    <div>错题反馈</div>
+                <div class="info4">
+                    <a href="./user.html">
+                        <span>用户管理</span>
+                    </a>
                 </div>
             </div>
-            <div class="left-t-2"></div>
         </div>
 
-        <!-- 作业消息栏 -->
-        <div class="left-b">
-            <div class="left-b-1">
-                <div class="left-b-2">作业批改提醒!</div>
-                <div class="left-b-3">考试变更提醒!</div>
+        <div class="b-info">
+            <img src="./images/info2.png" alt="">
+            <div class="bit">
+                <div>全部</div>
+                <div>免费课</div>
+                <div>实战课</div>
+                <div>体系课</div>
+                <div>微课</div>
             </div>
-        </div>
-
-        <!-- 轮播图 -->
-        <div class="banner">
-            <div class="b-c">
-                <img src="./images/work1.png" alt="">
-            </div>
-            <div class="toggle">
-                <button class="next">&gt;</button>
-                <button class="prev">&lt;</button>
-            </div>
+            <div class="bib"></div>
         </div>
     </div>
-        
+
     <script>
-        /* 轮播图 */
-        const sliderData = [
-            { url: './images/work1.png' },
-            { url: './images/work2.png' },
-            { url: './images/work3.png' },
-            { url: './images/work4.png' },
-        ]
-
-        const img = document.querySelector('.banner .b-c img')
-        /* 两个按钮 */
-        const next = document.querySelector('.next')
-        const prev = document.querySelector('.prev')
-        const slider = document.querySelector('.banner .b-c img')
-        
-        let timeId = 0
-        let i = 0
-
-        /* 两个按钮控制轮播图的切换 */
-        next.addEventListener('click', function(){
-            i++
-            i = i >=sliderData.length ? 0 : i
-            toggle()
-        })
-
-        prev.addEventListener('click', function(){
-            i--
-            i = i < 0 ? sliderData.length - 1 : i
-            toggle()
-        })
-
-        function toggle() {
-            img.src = sliderData[i].url
-        }
-
-
-        /* 计时器：轮播图自动切换 */
-        timeId = setInterval(function () {
-            next.click()
-        }, 1000)
-
-        slider.addEventListener('mouseenter', function () {
-            clearInterval(timeId)
-        })
-
-        slider.addEventListener('mouseleave', function () {
-            clearInterval(timeId)
-            timeId = setInterval(function () {
-            next.click()
-        }, 1000)
-        })
-
         /* 搜索栏文字输入和历史记录 */
         const input = document.querySelector('[type=text]')
         const searchul = document.querySelector('.result-list')
@@ -245,6 +206,18 @@
         }
         render()
 
+        /* 渲染个人主页 */
+        const usersName = document.querySelector('.users-name')
+        function render1() {
+            const usname = localStorage.getItem('hy-uname')
+            if (!usname) {
+                usersName.innerHTML = '<a href="javascript:;">登录</a>'
+            }else {
+                usersName.innerHTML = `<a href="javascript:;">${usname}</a>`
+            }
+        }
+        render1()
+
         /* 退出登录 */
         const out = document.querySelector('[name=out]')
         out.addEventListener('click', function () {
@@ -252,6 +225,4 @@
             render()
         })
     </script>
-    
-</body>    
-    
+</body>
