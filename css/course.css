@@ -29,6 +29,7 @@ a {
 
 body {
     background-color: #f2f5faf5;
+    height: 2200px;
 }
 
 .container {
@@ -50,6 +51,7 @@ body {
     background-color: #fff;
     display: flex;
     justify-content: center;
+    box-shadow: inset 0 -1px 0 0 #e7eaef;
 }
 
 .header .header-wrapper {
@@ -60,6 +62,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: inset 0 -1px 0 0 #e7eaef;
 }
 
 .fixed {
@@ -266,38 +269,33 @@ body {
 }
 
 /* 标签栏 */
-.marks {
-    position: fixed;
-    left: 30px;
-    height: 100%;
-    width: 250px;
-    background-color: rgba(32,33,35,0.9);
-    display: flex;
-    justify-content: center;
-}
 
 .flex-l {
-    position: absolute;
-    left: 80px;
-    top: 100px;
+    position: fixed;
+    top: 80px;
     width: 220px;
-    height: 600px;
+    height: 665px;
     z-index: 20;
     border: 1px solid #e5e5e5;
-    border-radius: .375rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: right;
     align-items: center;
     color: #000;
-    background-color: #ffffffb0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    box-shadow: inset 0 -1px 0 0 #e7eaef;
+}
+
+.flex-2 {
+    height: 266px;
+    width: 180px;
 }
 
 .flex-pic {
     width: 150px;
     height: 70px;
     display: flex;
+    margin-top: 20px;
     justify-content: center;
     border-bottom: 2px solid #efefef;
 }
@@ -308,13 +306,36 @@ body {
     height: 54.2px;
 }
 
+.classtitle {
+    width: 180px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 600;
+    align-items: left;
+    line-height: 56px;
+    padding-left: 25px;
+}
+
+.classfront a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 180px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #0052d9;
+    padding-right: 30px;
+} 
+
 .classtable a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 220px;
-    height: 44px;
-    font-size: 18px;
+    width: 180px;
+    height: 38px;
+    font-size: 16px;
     font-weight: 500;
     color: #000;
 } 
@@ -327,9 +348,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 220px;
-    height: 44px;
-    font-size: 18px;
+    width: 180px;
+    height: 38px;
+    font-size: 16px;
     font-weight: 500;
     color: #000;
 }
@@ -346,9 +367,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 220px;
-    height: 44px;
-    font-size: 18px;
+    width: 180px;
+    height: 38px;
+    font-size: 16px;
     font-weight: 500;
     margin-right: 5px;
 }
@@ -361,9 +382,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 220px;
-    height: 44px;
-    font-size: 18px;
+    width: 180px;
+    height: 38px;
+    font-size: 16px;
     font-weight: 500;
     color: #000;
 }
@@ -372,64 +393,56 @@ body {
     background-color: #efefef;
 }
 
-.class-fold {
-    width: 170px;
-    height: 190px;
+.classdata a {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #efefef;
-    border-radius: 5px;
+    width: 180px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 500;
     color: #000;
 }
 
-.classdiscuss-1 {
-    width: 150px;
-    height: 44px;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: right;
-    margin-right: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-right: 0;
+.classdata a:hover {
+    background-color: #efefef;
 }
 
-.classdiscuss-2 {
-    width: 150px;
-    height: 44px;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: right;
-    margin-right: 100px;
+.classsign a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-right: 0;
+    width: 180px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    padding-right: 30px;
 }
 
-.classdiscuss-3 {
-    width: 150px;
-    height: 44px;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: right;
-    margin-right: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-right: 0;
+.classsign a:hover {
+    background-color: #efefef;
 }
+
 
 /* 轮播图 */
+.ban-bar {
+    position: absolute;
+    width: 1040px;
+    height: 520px;
+    top: 110px;
+    left: 310px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(54,58,80,.32);
+}
+
 .banner {
     position: absolute;
-    top: 130px;
-    left: 380px;
+    top: 50px;
+    left: 40px;
     width: 960px;
     height: 420px;
+    box-shadow: inset 0 -1px 0 0 #e7eaef;
 }
 
 .b-c {
@@ -446,7 +459,6 @@ body {
     color: #000000;
     border-radius: 4px;
     cursor: pointer;
-    z-index: 10;
 }
 
 .toggle .prev {
@@ -463,4 +475,296 @@ body {
 
 .toggle button:hover {
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* 区域讨论 */
+.part-discuss {
+    position: absolute;
+    top: 670px;
+    left: 1030px;
+    width: 320px;
+    height: 382.50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(54,58,80,.32);
+}
+
+/* 区域个性化选择路线 */
+.part-choose {
+    position: absolute;
+    top: 1090px;
+    left: 310px;
+    width: 700px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(54,58,80,.32);
+}
+
+/* 课程签到 */
+.part-sign {
+    position: absolute;
+    top: 1090px;
+    left: 1030px;
+    width: 320px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(54,58,80,.32);
+}
+
+/* 课程数据 */
+.part-data {
+    position: absolute;
+    top: 1610px;
+    left: 310px;
+    width: 1040px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(54,58,80,.32);
+}
+
+/* 课表 */
+.sch-bar {
+    position: absolute;
+    top: 670px;
+    left: 310px;
+    width: 700px;
+    height: 382.50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(54,58,80,.32);
+}
+
+.schtitle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 70px;
+    height: 21px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.distitle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 70px;
+    height: 21px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.chotitle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 70px;
+    height: 21px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.sigtitle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 70px;
+    height: 21px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.dattitle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 70px;
+    height: 21px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn-1 {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    width: 90px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #0052d9;
+    color: #fff;
+    border: 0;
+}
+
+.btn-2 {
+    position: absolute;
+    top: 60px;
+    left: 135px;
+    width: 90px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #fff;
+    color: #0052d9;
+    border: 1px solid #cfd5de;
+}
+
+.sch-bar input {
+    position: absolute;
+    top: 60px;
+    left: 400px;
+    width: 160px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #cfd5de;
+    outline: none;
+}
+
+.sch-bar input:focus {
+    border: 1px solid #0052d9;
+}
+
+.schedule {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    width: 652px;
+    height: 262.50px;
+    background-color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+table {
+    width: 652px;
+    height: 262.50px;
+    border-collapse: collapse;
+}
+
+tbody {
+    width: 652px;
+    height: 262.50px;
+}
+
+tr:first-child {
+    width: 652px;
+    height: 43.75px;
+    color: #bfbfbf;
+}
+
+th {
+    border: 1px solid #cfd5de;
+    width: 81.5px;
+}
+
+.cho-bar {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    width: 600px;
+    height: 50px;
+    border-bottom: 1px solid #cfd5de;
+} 
+
+.cho-bar1 {
+    position: absolute;
+    left: 10px;
+    width: 120px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+    line-height: 50px;
+    border-bottom: 2px solid #0052d9;
+    text-align: center;
+}
+
+.cho-bar2 {
+    position: absolute;
+    left: 160px;
+    width: 120px;
+    height: 49px;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+    line-height: 49px;
+    text-align: center;
+}
+
+.cho-bar3 {
+    position: absolute;
+    left: 310px;
+    width: 120px;
+    height: 49px;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+    line-height: 49px;
+    text-align: center;
+}
+
+.dat-bar {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    width: 800px;
+    height: 50px;
+    border-bottom: 1px solid #cfd5de;
+} 
+
+.dat-bar1 {
+    position: absolute;
+    left: 10px;
+    width: 120px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+    line-height: 50px;
+    border-bottom: 2px solid #0052d9;
+    text-align: center;
+}
+
+.dat-bar2 {
+    position: absolute;
+    left: 160px;
+    width: 120px;
+    height: 49px;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+    line-height: 49px;
+    text-align: center;
+}
+
+.dat-bar3 {
+    position: absolute;
+    left: 310px;
+    width: 120px;
+    height: 49px;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+    line-height: 49px;
+    text-align: center;
+}
+
+.dat-bar4 {
+    position: absolute;
+    left: 460px;
+    width: 120px;
+    height: 49px;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+    line-height: 49px;
+    text-align: center;
 }

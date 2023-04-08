@@ -131,6 +131,7 @@ body {
     background-color: #fff;
     display: flex;
     justify-content: center;
+    box-shadow: inset 0 -1px 0 0 #e7eaef;
 }
 
 .header .header-wrapper {
@@ -141,6 +142,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: inset 0 -1px 0 0 #e7eaef;
 }
 
 .fixed {

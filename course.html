@@ -7,7 +7,7 @@
     <title>云平台</title>
     <link rel="stylesheet" href="./css/course.css">
     <link rel="stylesheet" href="./iconfont/iconfont.css">
-    <link rel="stylesheet" href="./iconfont5/iconfont.css">
+    <link rel="stylesheet" href="./iconfont9/iconfont.css">
 </head>
 <body>
     <div class="container">
@@ -97,56 +97,164 @@
             <div class="flex-pic">
                 <img src="./images/land2.png" alt="">
             </div>
-            <div class="classtable">
-                <a href="./schedule.html">
-                    <span class="iconfont icon-kebiao"></span>
-                    <div>我的课表</div>
-                </a>
-            </div>
-            <div class="selfclass">
-                <a href="./choose.html">
-                    <span class="iconfont icon-gexinghuayonghu"></span>
-                    <div>个性化选课</div>
-                </a>
-            </div>
-            <div class="classchoose">
-                <span class="iconfont icon-shaixuan"></span>
-                <div>课程筛选</div>
-            </div>
-            <div class="classdiscuss">
-                <a href="./discuss.html">
-                    <span class="iconfont icon-taolunqu"></span>
-                    <div>课程讨论</div>
-                </a>
-            </div>
-            <div class="class-fold">
-                <div class="classdiscuss-1">
-                    <div>></div>
-                    <div>线性代数</div>
+            <div class="flex-2">
+                <div class="classtitle">课程云</div>
+                <div class="classfront">
+                    <a href="#">
+                        <span class="iconfont icon-zonghegailan"></span>
+                        <div>概览</div>
+                    </a>
                 </div>
-                <div class="classdiscuss-2">
-                    <div>></div>
-                    <div>大学物理</div>
+                <div class="classtable">
+                    <a href="#">
+                        <span class="iconfont icon-kebiao"></span>
+                        <div>教学课表</div>
+                    </a>
                 </div>
-                <div class="classdiscuss-3">
-                    <div>></div>
-                    <div>大学英语</div>
+                <div class="selfclass">
+                    <a href="#">
+                        <span class="iconfont icon-gexinghuayonghu"></span>
+                        <div>个性化选课</div>
+                    </a>
+                </div>
+                <div class="classchoose">
+                    <span class="iconfont icon-shaixuan"></span>
+                    <div>课程筛选</div>
+                </div>
+                <div class="classdiscuss">
+                    <a href="./discuss.html">
+                        <span class="iconfont icon-taolunqu"></span>
+                        <div>课程讨论</div>
+                    </a>
+                </div>
+                <div class="classdata">
+                    <a href="#">
+                        <span class="iconfont icon-shujufenxi"></span>
+                        <div>课程数据</div>
+                    </a>
+                </div>
+                <div class="classsign">
+                    <a href="#">
+                        <span class="iconfont icon-qiandao"></span>
+                        <div>签到</div>
+                    </a>
                 </div>
             </div>
         </div>
 
         <!-- 轮播图 -->
-        <div class="banner">
-            <div class="b-c">
-                <img src="./images/coursebar1.png" alt="">
+        <div class="ban-bar">
+            <div class="banner">
+                <div class="b-c">
+                    <img src="./images/coursebar1.png" alt="">
+                </div>
+                <div class="toggle">
+                    <button class="next">&gt;</button>
+                    <button class="prev">&lt;</button>
+                </div>
             </div>
-            <div class="toggle">
-                <button class="next">&gt;</button>
-                <button class="prev">&lt;</button>
+        </div>
+
+        <!-- 课表 -->
+        <div class="sch-bar">
+            <div class="schtitle">教学课表</div>
+            <div class="schbtn">
+                <button class="btn-1">我的课表</button>
+                <button class="btn-2">导入课表</button>
+            </div>
+            <input type="text" placeholder="输入您的筛选信息">
+            <div class="schedule">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th>星期日</th>
+                            <th>星期一</th>
+                            <th>星期二</th>
+                            <th>星期三</th>
+                            <th>星期四</th>
+                            <th>星期五</th>
+                            <th>星期六</th>
+                        </tr>
+                        <tr>
+                            <th>01-02</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>形势与政策</th>
+                        </tr>
+                        <tr>
+                            <th>03-04</th>
+                            <th></th>
+                            <th>java程序设计</th>
+                            <th>体育（二）</th>
+                            <th>数据结构与算法</th>
+                            <th>微积分（二）</th>
+                            <th>微积分（二）</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>05-06</th>
+                            <th></th>
+                            <th>数据结构与算法</th>
+                            <th>java程序设计</th>
+                            <th></th>
+                            <th>大学生心理</th>
+                            <th>java程序设计</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>07-08</th>
+                            <th></th>
+                            <th></th>
+                            <th>英语（二）</th>
+                            <th></th>
+                            <th>java程序设计</th>
+                            <th>英语（二）</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>09-10</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>英语（二）</th>
+                            <th>金融学</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="part-discuss">
+            <div class="distitle">课程讨论</div>
+        </div>
+        <div class="part-choose">
+            <div class="chotitle">课程线路</div>
+            <div class="cho-bar">
+                <div class="cho-bar1">Java学习路线</div>
+                <div class="cho-bar2">大数据学习路线</div>
+                <div class="cho-bar3">人工智能学习路线</div>
+            </div>
+        </div>
+        <div class="part-sign">
+            <div class="sigtitle">课程签到</div>
+        </div>
+        <div class="part-data">
+            <div class="dattitle">课程数据</div>
+            <div class="dat-bar">
+                <div class="dat-bar1">课程详情信息</div>
+                <div class="dat-bar2">课程签到情况</div>
+                <div class="dat-bar3">课程计划安排</div>
+                <div class="dat-bar4">课程难度反馈</div>
             </div>
         </div>
     </div>
-    
 
     <script>
         /* 轮播图 */
@@ -186,7 +294,7 @@
         /* 计时器：轮播图自动切换 */
         timeId = setInterval(function () {
             next.click()
-        }, 1000)
+        }, 2000)
 
         slider.addEventListener('mouseenter', function () {
             clearInterval(timeId)
@@ -196,7 +304,7 @@
             clearInterval(timeId)
             timeId = setInterval(function () {
             next.click()
-        }, 1000)
+        }, 2000)
         })
 
         /* 搜索栏文字输入和历史记录 */
