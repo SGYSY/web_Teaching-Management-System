@@ -142,11 +142,16 @@
             </div>
         </div>
 
+        <div class="mainbar">
+            <div class="maintitle">概览</div>
+            <div class="mainmethod">下滑查看对应内容</div>
+        </div>
+
         <!-- 轮播图 -->
         <div class="ban-bar">
             <div class="banner">
                 <div class="b-c">
-                    <img src="./images/coursebar1.png" alt="">
+                    <img src="./images/coursebar2.png" alt="">
                 </div>
                 <div class="toggle">
                     <button class="next">&gt;</button>
@@ -244,6 +249,18 @@
         </div>
         <div class="part-sign">
             <div class="sigtitle">课程签到</div>
+            <div class="sign-bar">
+                <div class="sign-bar1">人脸识别签到</div>
+                <div class="sign-bar2">手势解锁签到</div>
+            </div>
+            <div class="face">
+                <img src="./images/face.png" alt="">
+            </div>
+            <div class="face-w">点击识别</div>
+            <div class="sign1">
+                <img src="./images/sign1.png" alt="">
+            </div>
+            <div class="sign1-w">点击解锁</div>
         </div>
         <div class="part-data">
             <div class="dattitle">课程数据</div>
@@ -259,9 +276,9 @@
     <script>
         /* 轮播图 */
         const sliderData = [
-            { url: './images/coursebar1.png' },
             { url: './images/coursebar2.png' },
             { url: './images/coursebar3.png' },
+            { url: './images/coursebar1.png' },
         ]
 
         const img = document.querySelector('.banner .b-c img')
@@ -294,7 +311,7 @@
         /* 计时器：轮播图自动切换 */
         timeId = setInterval(function () {
             next.click()
-        }, 2000)
+        }, 3000)
 
         slider.addEventListener('mouseenter', function () {
             clearInterval(timeId)
@@ -304,7 +321,7 @@
             clearInterval(timeId)
             timeId = setInterval(function () {
             next.click()
-        }, 2000)
+        }, 3000)
         })
 
         /* 搜索栏文字输入和历史记录 */

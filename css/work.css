@@ -446,19 +446,24 @@ body {
     border: 1px solid #e5e5e5;
     background-color: #f2f5faf5;
 }
-    
-
 
 .warel {
     position: absolute;
     top: 15px;
-    left: 20px;
+    left: 30px;
     width: 300px;
     height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     font-size: 14px;
+}
+
+.c-1 {
+    position: absolute;
+    width: 10px;
+    height: 120px;
+    background-color: #ff6417;
 }
 
 .warer {
@@ -495,6 +500,13 @@ body {
     background-color: #f2f5faf5;
 }
 
+.c-2 {
+    position: absolute;
+    width: 10px;
+    height: 120px;
+    background-color: #157afb;
+}
+
 .ware2-1 {
     font-weight: 600;
     color: #666666;
@@ -521,6 +533,13 @@ body {
 
 .ware3:hover {
     background-color: #f2f5faf5;
+}
+
+.c-3 {
+    position: absolute;
+    width: 10px;
+    height: 120px;
+    background-color: #22c7cc;
 }
 
 .ware3-1 {

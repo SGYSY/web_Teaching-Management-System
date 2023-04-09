@@ -273,12 +273,13 @@ body {
     top: 80px;
     width: 100%;
     height: 200px;
-    background-color: #016bb9;
 }
 
 .info {
     color: #fff;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 200px;
     height: 200px;
     display: flex;
     justify-content: space-around;

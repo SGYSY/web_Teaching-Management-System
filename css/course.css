@@ -430,7 +430,7 @@ body {
     position: absolute;
     width: 1040px;
     height: 520px;
-    top: 110px;
+    top: 180px;
     left: 310px;
     background-color: #fff;
     box-shadow: 0 2px 4px 0 rgba(54,58,80,.32);
@@ -480,7 +480,7 @@ body {
 /* 区域讨论 */
 .part-discuss {
     position: absolute;
-    top: 670px;
+    top: 740px;
     left: 1030px;
     width: 320px;
     height: 382.50px;
@@ -491,7 +491,7 @@ body {
 /* 区域个性化选择路线 */
 .part-choose {
     position: absolute;
-    top: 1090px;
+    top: 1160px;
     left: 310px;
     width: 700px;
     height: 500px;
@@ -502,7 +502,7 @@ body {
 /* 课程签到 */
 .part-sign {
     position: absolute;
-    top: 1090px;
+    top: 1160px;
     left: 1030px;
     width: 320px;
     height: 500px;
@@ -510,10 +510,86 @@ body {
     box-shadow: 0 2px 4px 0 rgba(54,58,80,.32);
 }
 
+.sign-bar {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    width: 260px;
+    height: 50px;
+    border-bottom: 1px solid #cfd5de;
+} 
+
+.sign-bar1 {
+    position: absolute;
+    left: 10px;
+    width: 120px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+    line-height: 50px;
+    border-bottom: 2px solid #0052d9;
+    text-align: center;
+}
+
+.sign-bar2 {
+    position: absolute;
+    left: 140px;
+    width: 120px;
+    height: 49px;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+    line-height: 49px;
+    text-align: center;
+}
+
+.face img {
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+}
+
+.face-w {
+    position: absolute;
+    top: 150px;
+    left: 160px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sign1 img {
+    position: absolute;
+    top: 290px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+}
+
+.sign1-w {
+    position: absolute;
+    top: 290px;
+    left: 160px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 /* 课程数据 */
 .part-data {
     position: absolute;
-    top: 1610px;
+    top: 1680px;
     left: 310px;
     width: 1040px;
     height: 500px;
@@ -524,7 +600,7 @@ body {
 /* 课表 */
 .sch-bar {
     position: absolute;
-    top: 670px;
+    top: 740px;
     left: 310px;
     width: 700px;
     height: 382.50px;
@@ -767,4 +843,35 @@ th {
     color: #000;
     line-height: 49px;
     text-align: center;
+}
+
+.mainbar {
+    position: absolute;
+    top: 80px;
+    left: 220px;
+    width: 1242.4px;
+    height: 50px;
+    background-color: #fff;
+}
+
+.maintitle {
+    position: absolute;
+    left: 20px;
+    width: 100px;
+    height: 50px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.mainmethod {
+    position: absolute;
+    right: 20px;
+    width: 200px;
+    height: 50px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 50px;
 }

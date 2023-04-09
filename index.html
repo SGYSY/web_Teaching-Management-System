@@ -79,19 +79,6 @@
                 <li></li>
             </ul>
             <div class="wrapper">
-                <div class="left">
-                    <ul>
-                        <li><a href="#">语文<span class="iconfont icon-yuwen1">></span></a></li>
-                        <li><a href="#">数学<span class="iconfont icon-shuxue1">></span></a></li>
-                        <li><a href="#">英语<span class="iconfont icon-yingyu1">></span></a></li>
-                        <li><a href="#">物理<span class="iconfont icon-physics-world">></span></a></li>
-                        <li><a href="#">化学<span class="iconfont icon-cup">></span></a></li>
-                        <li><a href="#">生物<span class="iconfont icon-shengwujishu">></span></a></li>
-                        <li><a href="#">历史<span class="iconfont icon-wenwuguji">></span></a></li>
-                        <li><a href="#">政治<span class="iconfont icon-zhengzhi1">></span></a></li>
-                        <li><a href="#">地理<span class="iconfont icon-earth-full">></span></a></li>
-                    </ul>
-                </div>
                 <div class="cube">
                     <div class="pic">
                         <img src="./images/banner1.jpg" alt="">
@@ -125,21 +112,13 @@
             </div>
         </div>
 
-        <!-- 精品推荐 -->
-        <div class="goods wrapper">
-            <h2>精品推荐</h2>
-            <ul>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JAVASCRIPT</a></li>
-                <li><a href="#">WEB</a></li>
-                <li><a href="#">GITHUB</a></li>
-                <li><a href="#">MYSQL</a></li>
-                <li><a href="#">VUE</a></li>
-                <li><a href="#">JAVA</a></li>
-                <li><a href="#">C++</a></li>
-            </ul>
-            <a href="#" class="xingqu">修改兴趣</a>
+        <!-- 文字介绍部分 -->
+        <div class="word-int wrapper">
+            <div class="word-int-1">稳定，高效，安全的云平台管理系统</div>
+            <div class="word-int-2">
+                <div class="word-int-2-1">Sonder五大模块，21类功能共筑产品矩阵</div>
+                <div class="word-int-2-2">查看功能 ></div>
+            </div>
         </div>
 
         <!-- 分区图片展示 -->
@@ -286,7 +265,7 @@
         /* 计时器：轮播图自动切换 */
         timeId = setInterval(function () {
             next.click()
-        }, 2000)
+        }, 3000)
 
         slider.addEventListener('mouseenter', function () {
             clearInterval(timeId)
@@ -296,7 +275,7 @@
             clearInterval(timeId)
             timeId = setInterval(function () {
             next.click()
-        }, 2000)
+        }, 3000)
         })
         
 
