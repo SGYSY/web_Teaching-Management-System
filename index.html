@@ -18,8 +18,8 @@
         <!--头部header:负责头部区域的样式， wrapper只负责版心效果 -->
         <div class="header fixed">
             <div class="header-wrapper">
-                <h1>
-                    <a href="#"><img src="./images/huayunlogo4.png" alt=""></a>
+                <h1 class="header-h1">
+                    <a href="#"><img src="./images/sonder.png" alt=""></a>
                 </h1>
         
                 <!-- 导航 -->
@@ -40,13 +40,6 @@
                 <!-- 搜索 -->
                 <div class="search">
                     <input type="text" placeholder="输入关键词">
-                    <ul class="result-list">
-                        <li class="past">历史记录：</li>
-                        <li>清华大学很帅</li>
-                        <li>北京大学厉害</li>
-                        <li>复旦大学呀</li>
-                        <li>中南大学</li>
-                    </ul>
                     <span class="iconfont icon-icon-test1"></span>
                 </div>
         
@@ -276,26 +269,6 @@
             timeId = setInterval(function () {
             next.click()
         }, 3000)
-        })
-        
-
-        /* 搜索栏文字输入和历史记录 */
-        const input = document.querySelector('[type=text]')
-        const searchul = document.querySelector('.result-list')
-        input.addEventListener('focus', function () {
-            searchul.style.display = 'block'
-        })
-        input.addEventListener('blur', function () {
-            searchul.style.display = 'none'
-        })
-
-        input.addEventListener('keyup', function (e) {
-            if (e.key === 'Enter') {
-                if (input.value.trim()) {
-                    console.log(input.value.trim());
-                }
-            input.value = ''
-            }
         })
 
         /* 侧边栏通知隐藏效果 */

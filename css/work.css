@@ -65,6 +65,11 @@ body {
     box-shadow: inset 0 -1px 0 0 #e7eaef;
 }
 
+.header-h1 img {
+    width: 214px;
+    height: 56px;
+}
+
 .fixed {
     position: fixed;
     top: 0;
@@ -314,7 +319,7 @@ body {
     padding-left: 25px;
 }
 
-.classfront a {
+.classfront {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -322,12 +327,15 @@ body {
     height: 38px;
     font-size: 16px;
     font-weight: 500;
-    color: #fff;
-    background-color: #0052d9;
     padding-right: 30px;
 } 
 
-.ware a {
+.blue {
+    color: #fff;
+    background-color: #0052d9;
+}
+
+.ware {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -335,14 +343,13 @@ body {
     height: 38px;
     font-size: 16px;
     font-weight: 500;
-    color: #000;
 }
 
-.ware a:hover {
+.ware:hover {
     background-color: #efefef;
 }
 
-.exam a {
+.exam {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -350,10 +357,9 @@ body {
     height: 38px;
     font-size: 16px;
     font-weight: 500;
-    color: #000;
 }
 
-.exam a:hover {
+.exam:hover {
     background-color: #efefef;
 }
 
@@ -372,7 +378,7 @@ body {
     background-color: #efefef;
 }
 
-.question a {
+.question {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -380,10 +386,9 @@ body {
     height: 38px;
     font-size: 16px;
     font-weight: 500;
-    color: #000;
 }
 
-.question a:hover {
+.question:hover {
     background-color: #efefef;
 }
 
@@ -608,6 +613,18 @@ body {
     z-index: 2;
     display: none;
     transition: all 10s ease-in-out;
+}
+
+.que1 img {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.que2 img {
+    position: absolute;
+    top: 30px;
+    left: 520px;
 }
 
 

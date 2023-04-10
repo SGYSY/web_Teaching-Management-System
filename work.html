@@ -18,8 +18,8 @@
         <!--头部header:负责头部区域的样式， wrapper只负责版心效果 -->
         <div class="header fixed">
             <div class="header-wrapper">
-                <h1>
-                    <a href="./index.html"><img src="./images/huayunlogo4.png" alt=""></a>
+                <h1 class="header-h1">
+                    <a href="./index.html"><img src="./images/sonder.png" alt=""></a>
                 </h1>
         
                 <!-- 导航 -->
@@ -40,13 +40,6 @@
                 <!-- 搜索 -->
                 <div class="search">
                     <input type="text" placeholder="输入关键词">
-                    <ul class="result-list">
-                        <li class="past">历史记录：</li>
-                        <li>清华大学很帅</li>
-                        <li>北京大学厉害</li>
-                        <li>复旦大学呀</li>
-                        <li>中南大学</li>
-                    </ul>
                     <span class="iconfont icon-icon-test1"></span>
                 </div>
         
@@ -99,33 +92,25 @@
             </div>
             <div class="left-t-1-1">
                 <div class="worktitle">作业云</div>
-                <div class="classfront">
-                    <a href="#">
+                <div class="classfront blue">
                         <span class="iconfont icon-zonghegailan"></span>
                         <div>概览</div>
-                    </a>
                 </div>
                 <div class="ware">
-                    <a href="#">
                         <span class="iconfont icon-jiaoxuekejian"></span>
                         <div>同步课件</div>
-                    </a>
                 </div>
                 <div class="exam">
-                    <a href="#">
                         <span class="iconfont icon-kaoshi"></span>
                         <div>课程考试</div>
-                    </a>
                 </div>
                 <div class="submit">
                     <span class="iconfont icon-zuoyerili"></span>
                     <div>课程作业</div>
                 </div>
                 <div class="question">
-                    <a href="./discuss.html">
-                        <span class="iconfont icon-cuoti"></span>
-                        <div>错题反馈</div>
-                    </a>
+                    <span class="iconfont icon-cuoti"></span>
+                    <div>错题反馈</div>
                 </div>
             </div>
         </div>
@@ -133,7 +118,7 @@
         <!-- 主功能区 -->
         <div class="mainbar">
             <div class="maintitle">概览</div>
-            <div class="mainmethod">划入查看对应内容</div>
+            <div class="mainmethod">下滑查看对应内容</div>
         </div>
         <div class="mainpic1">
             <img src="./images/work1.png" alt="" name="pic1">
@@ -181,6 +166,12 @@
         <div class="mainpic3">
             <img src="./images/work4.png" alt="" name="pic3">
             <div class="coursework">
+                <div class="que1">
+                    <img src="./images/question1.png" alt="">
+                </div>
+                <div class="que2">
+                    <img src="./images/question2.png" alt="">
+                </div>
             </div>
         </div>
         <div class="mainpic4">
@@ -191,25 +182,6 @@
     </div>
         
     <script>
-        /* 搜索栏文字输入和历史记录 */
-        const input = document.querySelector('[type=text]')
-        const searchul = document.querySelector('.result-list')
-        input.addEventListener('focus', function () {
-            searchul.style.display = 'block'
-        })
-        input.addEventListener('blur', function () {
-            searchul.style.display = 'none'
-        })
-
-        input.addEventListener('keyup', function (e) {
-            if (e.key === 'Enter') {
-                if (input.value.trim()) {
-                    console.log(input.value.trim());
-                }
-            input.value = ''
-            }
-        })
-
         /* 侧边栏通知隐藏效果 */
         const course = document.querySelector('.sidecourse')
         const right = document.querySelector('.right')
@@ -223,48 +195,87 @@
         })
 
         /* 主功能区隐藏效果 */
-        const pic1 = document.querySelector('[name=pic1]')
         const courseware = document.querySelector('.courseware')
-        pic1.addEventListener('mouseenter', () => {
-            courseware.style.display = 'block'
-            courseware.style.opacity = 1
+        const classfront = document.querySelector('.classfront')
+        const ware = document.querySelector('.ware')
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY
+            if (scrollPosition >= 10) {
+                courseware.style.display = 'block'
+                courseware.style.opacity = 1
+                classfront.classList.remove('blue')
+                ware.classList.add('blue')
+            } else {
+                courseware.style.display = 'none'
+                courseware.style.opacity = 0 
+                ware.classList.remove('blue')
+                classfront.classList.add('blue')
+            }
+            if (scrollPosition >= 350) {
+                courseware.style.display = 'none'
+                courseware.style.opacity = 0 
+                ware.classList.remove('blue')
+            }
         })
-        pic1.addEventListener('mouseleave', () => {
-            courseware.style.display = 'none'
-            courseware.style.opacity = 0 
-        })
-
-        const pic2 = document.querySelector('[name=pic2]')
+        
         const courseexam = document.querySelector('.courseexam')
-        pic2.addEventListener('mouseenter', () => {
-            courseexam.style.display = 'block'
-            courseexam.style.opacity = 1
-        })
-        pic2.addEventListener('mouseleave', () => {
-            courseexam.style.display = 'none'
-            courseexam.style.opacity = 0 
+        const exam = document.querySelector('.exam')
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY
+            if (scrollPosition >= 350) {
+                courseexam.style.display = 'block'
+                courseexam.style.opacity = 1
+                exam.classList.add('blue')
+            } else {
+                courseexam.style.display = 'none'
+                courseexam.style.opacity = 0 
+                exam.classList.remove('blue')
+            }
+            if (scrollPosition >= 700) {
+                courseexam.style.display = 'none'
+                courseexam.style.opacity = 0 
+                exam.classList.remove('blue')
+            }
         })
 
-        const pic3 = document.querySelector('[name=pic3]')
         const coursework = document.querySelector('.coursework')
-        pic3.addEventListener('mouseenter', () => {
-            coursework.style.display = 'block'
-            coursework.style.opacity = 1 
-        })
-        pic3.addEventListener('mouseleave', () => {
-            coursework.style.display = 'none'
-            coursework.style.opacity = 0 
+        const submit = document.querySelector('.submit')
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY
+            if (scrollPosition >= 700) {
+                coursework.style.display = 'block'
+                coursework.style.opacity = 1
+                submit.classList.add('blue')
+            } else {
+                coursework.style.display = 'none'
+                coursework.style.opacity = 0 
+                submit.classList.remove('blue')
+            }
+            if (scrollPosition >= 1050) {
+                coursework.style.display = 'none'
+                coursework.style.opacity = 0 
+                submit.classList.remove('blue')
+            }
         })
 
-        const pic4 = document.querySelector('[name=pic4]')
         const feedback = document.querySelector('.feedback')
-        pic4.addEventListener('mouseenter', () => {
-            feedback.style.display = 'block'
-            feedback.style.opacity = 1 
-        })
-        pic4.addEventListener('mouseleave', () => {
-            feedback.style.display = 'none'
-            feedback.style.opacity = 0 
+        const question = document.querySelector('.question')
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY
+            if (scrollPosition >= 1050) {
+                feedback.style.display = 'block'
+                feedback.style.opacity = 1
+                question.classList.add('blue')
+            } else {
+                feedback.style.display = 'none'
+                feedback.style.opacity = 0 
+                question.classList.remove('blue')
+            }
+            if (scrollPosition >= 1400) {
+                feedback.style.display = 'none'
+                feedback.style.opacity = 0 
+                question.classList.remove('blue')
+            }
         })
                 
         /* 导航栏固定 */
