@@ -29,7 +29,7 @@ a {
 
 body {
     background-color: #f2f5faf5;
-    height: 2300px;
+    height: 2250px;
 }
 
 .container {
@@ -895,4 +895,16 @@ th {
     left: 520px;
     width: 470px;
     height: 350px;
+}
+
+.discusses img {
+    position: absolute;
+    top: 100px;
+    left: 60px;
+}
+
+.root {
+    position: absolute;
+    top: 100px;
+    left: 40px;
 }

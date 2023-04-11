@@ -426,13 +426,13 @@ body {
 
 .mainpic1 img {
     position: absolute;
-    top: 150px;
+    top: 170px;
     left: 310px;
 }
 
 .courseware {
     position: absolute;
-    top: 150px;
+    top: 170px;
     left: 310px;
     width: 1000px;
     height: 420px;
@@ -563,13 +563,13 @@ body {
 
 .mainpic2 img {
     position: absolute;
-    top: 590px;
+    top: 620px;
     left: 310px;
 }
 
 .courseexam {
     position: absolute;
-    top: 590px;
+    top: 620px;
     left: 310px;
     width: 1000px;
     height: 420px;
@@ -581,13 +581,13 @@ body {
 
 .mainpic3 img {
     position: absolute;
-    top: 1030px;
+    top: 1070px;
     left: 310px;
 }
 
 .coursework {
     position: absolute;
-    top: 1030px;
+    top: 1070px;
     left: 310px;
     width: 1000px;
     height: 420px;
@@ -599,13 +599,13 @@ body {
 
 .mainpic4 img {
     position: absolute;
-    top: 1480px;
+    top: 1530px;
     left: 310px;
 }
 
 .feedback {
     position: absolute;
-    top: 1480px;
+    top: 1530px;
     left: 310px;
     width: 1000px;
     height: 420px;
@@ -627,6 +627,27 @@ body {
     left: 520px;
 }
 
+.examtitle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 70px;
+    height: 21px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.courseexam img {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+
+.feedback img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
 
