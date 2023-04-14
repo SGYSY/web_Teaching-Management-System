@@ -32,7 +32,7 @@
                             <a href="#">作业云</a>
                         </li>
                         <li>
-                            <a href="#">实验云</a>
+                            <a href="./lab.html">实验云</a>
                         </li>
                     </ul>
                 </div>
@@ -121,8 +121,8 @@
             <div class="mainmethod">下滑查看对应内容</div>
         </div>
         <div class="mainpic1">
-            <img src="./images/work1.png" alt="" name="pic1">
             <div class="courseware">
+                <div class="coursetitle">同步课件</div>
                 <div class="ware1">
                     <div class="c-1"></div>
                     <div class="warel">
@@ -159,29 +159,63 @@
             </div>
         </div>
         <div class="mainpic2">
-            <img src="./images/work2.png" alt="" name="pic2">
             <div class="courseexam">
                 <div class="examtitle">
                     课程考试
                 </div>
+                <div class="courseexam2">查看详情</div>
+                <div class="courseexam3">点击预约</div>
                 <img src="./images/exam.png" alt="">
             </div>
         </div>
         <div class="mainpic3">
-            <img src="./images/work4.png" alt="" name="pic3">
             <div class="coursework">
-                <div class="que1">
-                    <img src="./images/question1.png" alt="">
+                <div class="worktitle">
+                    课程作业
                 </div>
-                <div class="que2">
-                    <img src="./images/question2.png" alt="">
+                <div class="course-time">
+                    <div class="que1">
+                        你有一条新的作业提醒！
+                    </div>
+                    <div class="que2">
+                        你的作业反馈已经送达！
+                    </div>
+                    <div class="que3">
+                        距离截止时间还有30分钟!
+                    </div>
+                </div>
+                <div class="workdetails">
+                    <div class="detailstitle">作业详情</div>
+                    <div class="detailswords">
+                        未登录<br>
+                        暂无历史数据
+                    </div>
+                </div>
+                <div class="submit-box">
+                    <div class="worksubmit">
+                        <img src="./images/worksubmit.jpg" alt="">
+                    </div>
+                    <div class="submit-btn">
+                        拖动文件<br>
+                        提交作业
+                    </div>
+                </div>
+                <div class="submit-btm">
+                    <span class="iconfont icon-zuoyerili"></span>
+                    历史作业
                 </div>
             </div>
         </div>
         <div class="mainpic4">
-            <img src="./images/work3.png" alt="" name="pic4">
             <div class="feedback">
-                <img src="./images/wrong.png" alt="">
+                <div class="feedtitle">错题反馈</div>
+                <div class="feedback2">查看详情</div>
+                <div class="feed1">
+                    <img src="./images/feed2.png" alt="">
+                </div>
+                <div class="feed2">
+                    <img src="./images/feed3.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -205,20 +239,14 @@
         const ware = document.querySelector('.ware')
         window.addEventListener('scroll', () => {
             const scrollPosition = window.scrollY
-            if (scrollPosition >= 10) {
-                courseware.style.display = 'block'
-                courseware.style.opacity = 1
+            if (scrollPosition >= 0) {
                 classfront.classList.remove('blue')
                 ware.classList.add('blue')
             } else {
-                courseware.style.display = 'none'
-                courseware.style.opacity = 0 
                 ware.classList.remove('blue')
                 classfront.classList.add('blue')
             }
             if (scrollPosition >= 350) {
-                courseware.style.display = 'none'
-                courseware.style.opacity = 0 
                 ware.classList.remove('blue')
             }
         })
@@ -228,17 +256,11 @@
         window.addEventListener('scroll', () => {
             const scrollPosition = window.scrollY
             if (scrollPosition >= 350) {
-                courseexam.style.display = 'block'
-                courseexam.style.opacity = 1
                 exam.classList.add('blue')
             } else {
-                courseexam.style.display = 'none'
-                courseexam.style.opacity = 0 
                 exam.classList.remove('blue')
             }
             if (scrollPosition >= 700) {
-                courseexam.style.display = 'none'
-                courseexam.style.opacity = 0 
                 exam.classList.remove('blue')
             }
         })
@@ -248,17 +270,11 @@
         window.addEventListener('scroll', () => {
             const scrollPosition = window.scrollY
             if (scrollPosition >= 700) {
-                coursework.style.display = 'block'
-                coursework.style.opacity = 1
                 submit.classList.add('blue')
             } else {
-                coursework.style.display = 'none'
-                coursework.style.opacity = 0 
                 submit.classList.remove('blue')
             }
             if (scrollPosition >= 1050) {
-                coursework.style.display = 'none'
-                coursework.style.opacity = 0 
                 submit.classList.remove('blue')
             }
         })
@@ -268,17 +284,11 @@
         window.addEventListener('scroll', () => {
             const scrollPosition = window.scrollY
             if (scrollPosition >= 1050) {
-                feedback.style.display = 'block'
-                feedback.style.opacity = 1
                 question.classList.add('blue')
             } else {
-                feedback.style.display = 'none'
-                feedback.style.opacity = 0 
                 question.classList.remove('blue')
             }
             if (scrollPosition >= 1400) {
-                feedback.style.display = 'none'
-                feedback.style.opacity = 0 
                 question.classList.remove('blue')
             }
         })

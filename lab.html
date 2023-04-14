@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云平台</title>
+    <link rel="stylesheet" href="./css/lab.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./iconfont9/iconfont.css">
+</head>
+<body>
+    <div class="container">
+        <!--网站的首页，所有的网站的首页都叫index。html因为服务器找首页都是找index.html-->
+        <!--布局：从外到内，从上到下，从左到右-->
+        <!--css: 浮动/display ；盒子模型 ；文字样式-->
+
+        <!--头部header:负责头部区域的样式， wrapper只负责版心效果 -->
+        <div class="header-demo">
+            <a href="./index.html"><img src="./images/sonder.png" alt=""></a>
+        </div>
+        <div class="header fixed">
+            <div class="header-wrapper">
+                <h1 class="header-h1">
+                    <a href="./index.html"><img src="./images/sonder.png" alt=""></a>
+                </h1>
+        
+                <!-- 导航 -->
+                <div class="nav">
+                    <ul class="tool">
+                        <li>
+                            <a href="./course.html">课程云</a>
+                        </li>
+                        <li>
+                            <a href="./work.html">作业云</a>
+                        </li>
+                        <li>
+                            <a href="#">实验云</a>
+                        </li>
+                    </ul>
+                </div>
+        
+                <!-- 搜索 -->
+                <div class="search">
+                    <input type="text" placeholder="输入关键词">
+                    <span class="iconfont icon-icon-test1"></span>
+                </div>
+        
+                <!-- 用户 -->
+                <div class="user">
+                    <a href="./self.html">
+                        <img src="./images/user.png" alt="">
+                    </a>
+                    <a href="javascript:;"><span class="user-name">登录</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 功能区块 -->
+        <div class="file-parts">
+            <div class="file-title">实验文件上传区</div>
+            <div for="upload-file" class="upload-label">
+                <img src="./images/worksubmit.jpg" alt="">
+            </div>
+            <input type="file" id="upload-file" class="upload-input">
+            <div id="file-info"></div>
+            <div class="progress">
+                <div class="bar"></div>
+                <div class="percent">0%</div>
+            </div>
+        </div>
+        <div class="file1"></div>
+        <div class="file2"></div>
+        <div class="file3"></div>
+        <div class="file4"></div>
+        <div class="file5"></div>
+        <div class="file6"></div>
+        <div class="file7"></div>
+        <div class="file8"></div>
+
+        <div class="book-parts">
+            <div class="mybook">
+                <div class="book-parts1">
+                </div>
+                <div class="book-parts2">
+                </div>
+                <div class="book-parts3">
+                </div>
+            </div>
+        </div>
+        <div class="book1"></div>
+        <div class="book2"></div>
+        <div class="book3"></div>
+        <div class="book4"></div>
+        <div class="book5"></div>
+        <div class="book6"></div>
+        <div class="book7"></div>
+        <div class="book8"></div>
+
+        <div class="history-parts">
+            <div class="history-title">实验记录</div>
+            <table style="width: 340px; height: 180px; border: 1px solid black;">
+                <thead>
+                    <tr>
+                    <th>编号</th>
+                    <th>日期</th>
+                    <th>实验类型</th>
+                    <th>实验状态</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="history1"></div>
+        <div class="history2"></div>
+        <div class="history3"></div>
+        <div class="history4"></div>
+        <div class="history5"></div>
+        <div class="history6"></div>
+        <div class="history7"></div>
+        <div class="history8"></div>
+        <div class="para-parts">
+
+        </div>
+        <div class="progress-parts">
+            <div class="progress-title">实验进度监控</div>
+            <div class="circle-container">
+                <canvas id="circle" width="150" height="150"></canvas>
+                <div id="percentage"></div>
+            </div>   
+            <div class="circle-container1">
+                <canvas id="circle1" width="150" height="150"></canvas>
+                <div id="percentage1"></div>
+            </div>         
+            <div class="progress-title2">损失值</div>
+            <div class="progress-title3">准确率</div>                
+        </div>
+        <div class="result-parts">
+            <label for="sample-size">Sample Size:</label>
+<input type="range" min="0" max="1000" value="500" class="slider" id="sample-size">
+<p>Sample Size: <span id="sample-size-value">500</span></p>
+
+<button id="randomize-groups">Randomize Groups</button>
+
+<p>Experiment Start Time: <span id="start-time"></span></p>
+
+        </div>
+        <div class="data-parts">
+
+        </div>
+    </div>
+
+    <script>
+        /* 导航栏固定 */
+        const header = document.querySelector('.header')
+        window.addEventListener('scroll', function () {
+            const n = document.documentElement.scrollTop
+            if ( n >= 0) {
+                header.classList.add('fixed')
+            } else {
+                header.classList.remove('fixed')
+            }
+        })
+
+        /* 渲染用户名 */
+        const userName = document.querySelector('.user-name')
+        function render() {
+            const uname = localStorage.getItem('hy-uname')
+            if (!uname) {
+                userName.innerHTML = '<a href="./load.html">登录</a>'
+            }else {
+                userName.innerHTML = `<a href="javascript:;">${uname}</a>`
+            }
+        }
+        render()
+
+        const uploadInput = document.getElementById('upload-file');
+        const fileInfo = document.getElementById('file-info');
+        const progressBar = document.querySelector('.progress');
+        const bar = progressBar.querySelector('.bar');
+        const percent = progressBar.querySelector('.percent');
+        // 点击图片上传文件
+        document.querySelector('.upload-label').addEventListener('click', () => {
+        uploadInput.click();
+        });
+
+        uploadInput.addEventListener('change', () => {
+        const file = uploadInput.files[0];
+        });
+
+        /* 显示进度条 */
+        uploadInput.addEventListener('change', function() {
+        progressBar.style.display = 'block';
+        // 设置进度条初始值为0
+        bar.style.width = '0%';
+        percent.innerText = '0%';
+        fileInfo.innerText = '';
+
+        // 模拟进度条，每500毫秒增加5%
+        let i = 0;
+        let interval = setInterval(function() {
+        i += 5;
+        bar.style.width = i + '%';
+        percent.innerText = i + '%';
+        if (i === 100) {
+            clearInterval(interval);
+            setTimeout(function() {
+            fileInfo.innerText = '上传成功';
+            }, 1000);
+        }
+        }, 500);
+        });
+
+        /* 亮暗分割圆效果 */
+        const circle = document.getElementById("circle");
+        const percentage = document.getElementById("percentage");
+
+        circle.addEventListener("click", function(event) {
+        const rect = circle.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        let angle = Math.atan2(event.clientY - centerY, event.clientX - centerX);
+        if (angle < 0) {
+            angle += 2 * Math.PI;
+        }
+        let percent = Math.round((angle / (2 * Math.PI) + 0.25) * 100);
+        if (percent > 100) {
+            percent -= 100;
+        } else if (percent < 0) {
+            percent += 100;
+        }
+        percentage.textContent = percent + "%";
+        circle.style.setProperty("--rotate", angle + "rad");
+        circle.style.setProperty("--color", percent >= 50 ? "blue" : "gray");
+        });
+
+        const circle1 = document.getElementById("circle1");
+        const percentage1 = document.getElementById("percentage1");
+
+        circle1.addEventListener("click", function(event1) {
+        const rect = circle1.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        let angle = Math.atan2(event.clientY - centerY, event.clientX - centerX);
+        if (angle < 0) {
+            angle += 2 * Math.PI;
+        }
+        let percent = Math.round((angle / (2 * Math.PI) + 0.25) * 100);
+        if (percent > 100) {
+            percent -= 100;
+        } else if (percent < 0) {
+            percent += 100;
+        }
+        percentage1.textContent = percent + "%";
+        circle1.style.setProperty("--rotate", angle + "rad");
+        circle1.style.setProperty("--color", percent >= 50 ? "blue" : "gray");
+        });
+
+        // 获取样本量滑块和值
+const sampleSizeSlider = document.getElementById("sample-size");
+const sampleSizeValue = document.getElementById("sample-size-value");
+sampleSizeValue.innerHTML = sampleSizeSlider.value; // 初始值
+
+// 更新样本量值
+sampleSizeSlider.addEventListener("input", function() {
+  sampleSizeValue.innerHTML = this.value;
+});
+
+// 随机分组
+const randomizeGroupsButton = document.getElementById("randomize-groups");
+randomizeGroupsButton.addEventListener("click", function() {
+  const sampleSize = sampleSizeSlider.value;
+  const groupASize = Math.round(sampleSize / 2); // 一半分到 A 组
+  const groupBSize = sampleSize - groupASize; // 剩下的分到 B 组
+  const groupAssignment = new Array(sampleSize);
+
+  // 生成随机组分配
+  for (let i = 0; i < groupASize; i++) {
+    groupAssignment[i] = "A";
+  }
+  for (let i = groupASize; i < sampleSize; i++) {
+    groupAssignment[i] = "B";
+  }
+  for (let i = sampleSize - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [groupAssignment[i], groupAssignment[j]] = [groupAssignment[j], groupAssignment[i]]; // 随机交换顺序
+  }
+
+  console.log(groupAssignment); // 打印组分配
+});
+
+// 记录实验开始时间
+const startTime = Date.now();
+const startTimeElement = document.getElementById("start-time");
+startTimeElement.innerHTML = new Date(startTime).toLocaleString();
+
+    </script>
+</body>

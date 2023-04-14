@@ -376,7 +376,7 @@ body {
 
 .footer .left {
     margin-left: 50px;
-    width: 350px;
+    width: 450px;
     height: 250px;
 }
 
@@ -387,6 +387,8 @@ body {
 
 .footer .left img {
     left: 50px;
+    width: 300px;
+    height: 80px;
 }
 
 .footer .f-right {

@@ -437,14 +437,23 @@ body {
     width: 1000px;
     height: 420px;
     background-color: #fff;
-    z-index: 2;
-    display: none;
     transition: all 10s ease-in-out;
+    box-shadow: 0 2px 4px 0 rgba(54,58,80,.32);
+}
+
+.coursetitle {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 70px;
+    height: 20px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .ware1 {
     position: absolute;
-    top: 15px;
+    top: 40px;
     left: 40px;
     width: 920px;
     height: 120px;
@@ -493,7 +502,7 @@ body {
 
 .ware2 {
     position: absolute;
-    top: 150px;
+    top: 165px;
     left: 40px;
     width: 920px;
     height: 120px;
@@ -528,7 +537,7 @@ body {
 
 .ware3 {
     position: absolute;
-    top: 285px;
+    top: 290px;
     left: 40px;
     width: 920px;
     height: 120px;
@@ -574,15 +583,8 @@ body {
     width: 1000px;
     height: 420px;
     background-color: #fff;
-    z-index: 2;
-    display: none;
     transition: all 10s ease-in-out;
-}
-
-.mainpic3 img {
-    position: absolute;
-    top: 1070px;
-    left: 310px;
+    box-shadow: 0 2px 4px 0 rgba(54,58,80,.32);
 }
 
 .coursework {
@@ -592,9 +594,8 @@ body {
     width: 1000px;
     height: 420px;
     background-color: #fff;
-    z-index: 2;
-    display: none;
     transition: all 10s ease-in-out;
+    box-shadow: 0 2px 4px 0 rgba(54,58,80,.32);
 }
 
 .mainpic4 img {
@@ -610,21 +611,8 @@ body {
     width: 1000px;
     height: 420px;
     background-color: #fff;
-    z-index: 2;
-    display: none;
     transition: all 10s ease-in-out;
-}
-
-.que1 img {
-    position: absolute;
-    top: 30px;
-    left: 40px;
-}
-
-.que2 img {
-    position: absolute;
-    top: 30px;
-    left: 520px;
+    box-shadow: 0 2px 4px 0 rgba(54,58,80,.32);
 }
 
 .examtitle {
@@ -639,7 +627,7 @@ body {
 
 .courseexam img {
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: 40px;
 }
 
@@ -648,6 +636,207 @@ body {
     top: 0;
     left: 0;
 }
+
+.courseexam2 {
+    position: absolute;
+    top: 15px;
+    right: 135px;
+    width: 90px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #0052d9;
+    color: #fff;
+    border: 0;
+    text-align: center;
+    line-height: 30px;
+}
+
+.courseexam3 {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 90px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #fff;
+    color: #0052d9;
+    border: 1px solid #cfd5de;
+    text-align: center;
+    line-height: 30px;
+}
+
+.feedtitle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 70px;
+    height: 21px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.feedback2 {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 90px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #0052d9;
+    color: #fff;
+    border: 0;
+    text-align: center;
+    line-height: 30px;
+}
+
+.feed1 img {
+    position: absolute;
+    top: 90px;
+    left: 60px;
+    width: 360px;
+    height: 300px;
+    border: 2px solid #cfd5de;
+}
+
+.feed2 img {
+    position: absolute;
+    top: 50px;
+    left: 490px;
+    width: 440px;
+    height: 360px;
+}
+
+.que1 {
+    position: absolute;
+    width: 320px;
+    height: 60px;
+    top: 100px;
+    left: 40px;
+    background-color: #ff6417;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
+
+.que2 {
+    position: absolute;
+    width: 320px;
+    height: 60px;
+    top: 200px;
+    left: 40px;
+    background-color: #0052d9;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
+
+.que3 {
+    position: absolute;
+    width: 320px;
+    height: 60px;
+    top: 300px;
+    left: 40px;
+    background-color: #22c7cc;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
+
+.workdetails {
+    position: absolute;
+    width: 300px;
+    height: 360px;
+    top: 30px;
+    left: 400px;
+    border-radius: 8px;
+    border: 2px solid #cfd5de;
+}
+
+.worksubmit img {
+    width: 180px;
+    height: 180px;
+}
+
+.submit-btn {
+    width: 100px;
+    height: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.submit-box {
+    position: absolute;
+    border-radius: 8px;
+    top: 40px;
+    right: 60px;
+    width: 200px;
+    height: 280px;
+    border: 2px solid #cfd5de;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submit-btm {
+    position: absolute;
+    top: 350px;
+    right: 60px;
+    width: 200px;
+    height: 40px;
+    border: 2px solid #cfd5de;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 8px;
+}
+
+.submit-btm span {
+    margin-right: 10px;
+}
+
+.detailstitle {
+    position: absolute;
+    left: 150px;
+    transform: translateX(-50%);
+    top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 2px solid #cfd5de;
+}
+
+.detailswords {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 100px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+    color: #aaaaaa;
+}
+    
 
 
 
