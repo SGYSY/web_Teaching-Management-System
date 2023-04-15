@@ -82,6 +82,18 @@ body {
     transform: translateX(-50%);
 }
 
+#time {
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    width: 300px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 32px;
+}
+
 .demo-choice1 {
     position: absolute;
     top: 5px;
@@ -176,6 +188,8 @@ body {
     font-weight: 500;
     text-align: center;
     line-height: 32px;
+    background-color: #fff;
+    border: #fff;
 }
 
 .choice2-1 {
@@ -1369,4 +1383,29 @@ height: 180px;
     background-color: #157afb;
     height: 3px;
     width: 18px;
+}
+
+.popup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px #ccc;
+    display: none;
+    z-index: 2;
+    background-color: #eff7ea;
+}
+
+.popup .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 2;
 }

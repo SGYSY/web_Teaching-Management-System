@@ -27,7 +27,7 @@
             <div class="choice1-6"></div>
             <div class="choice1-7"></div>
             <div class="choice1-8"></div>
-            <div class="demo-choice2">实验预约</div>
+            <button class="demo-choice2" onclick="bookExperiment()">实验预约</button>
             <div class="choice2-1"></div>
             <div class="choice2-2"></div>
             <div class="choice2-3"></div>
@@ -36,6 +36,11 @@
             <div class="choice2-6"></div>
             <div class="choice2-7"></div>
             <div class="choice2-8"></div>
+            <div id="time"></div>
+        </div>
+        <div class="popup" id="success-popup">
+            <span class="close-btn" onclick="closePopup()">×</span>
+            <p>预约成功！</p>
         </div>
         <div class="header fixed">
             <div class="header-wrapper">
@@ -405,5 +410,38 @@
             }
 
       document.getElementById("submit-btn").addEventListener("click", handleUserInput);
+    
+    /* 预约窗口 */
+    function bookExperiment() {
+        // 这里可以添加一些预约实验的逻辑
+        // ...
+        
+        // 显示预约成功信息的div
+        const popup = document.getElementById("success-popup");
+        popup.style.display = "block";
+    }
+      
+    function closePopup() {
+        // 隐藏div
+        const popup = document.getElementById("success-popup");
+        popup.style.display = "none";
+    }
+    // 获取当前时间
+    var now = new Date();
+        
+        // 获取年、月、日、小时、分钟和秒
+        var year = now.getFullYear();
+        var month = now.getMonth() + 1;
+        var day = now.getDate();
+        var hour = now.getHours();
+        var minute = now.getMinutes();
+        var second = now.getSeconds();
+        
+        // 获取显示时间的div
+        var timeDiv = document.getElementById("time");
+        
+        // 将时间显示在div中
+        timeDiv.innerText = "当前时间：" + year + "-" + month + "-" + day + " " + hour + ":" + minute + ":" + second;
+    
     </script>
 </body>
