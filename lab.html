@@ -18,6 +18,24 @@
         <!--头部header:负责头部区域的样式， wrapper只负责版心效果 -->
         <div class="header-demo">
             <a href="./index.html"><img src="./images/sonder.png" alt=""></a>
+            <div class="demo-choice1">实验总览</div>
+            <div class="choice1-1"></div>
+            <div class="choice1-2"></div>
+            <div class="choice1-3"></div>
+            <div class="choice1-4"></div>
+            <div class="choice1-5"></div>
+            <div class="choice1-6"></div>
+            <div class="choice1-7"></div>
+            <div class="choice1-8"></div>
+            <div class="demo-choice2">实验预约</div>
+            <div class="choice2-1"></div>
+            <div class="choice2-2"></div>
+            <div class="choice2-3"></div>
+            <div class="choice2-4"></div>
+            <div class="choice2-5"></div>
+            <div class="choice2-6"></div>
+            <div class="choice2-7"></div>
+            <div class="choice2-8"></div>
         </div>
         <div class="header fixed">
             <div class="header-wrapper">
@@ -79,12 +97,22 @@
         <div class="file8"></div>
 
         <div class="book-parts">
+            <div class="book-title">实验参数</div>
             <div class="mybook">
                 <div class="book-parts1">
+                    <label for="sample-size1">学习率:</label>
+                    <input type="range" min="0.001" max="0.1" step="0.001" value="0.05" class="slider" id="sample-size1">
+                    <span id="sample-size-value1">0.05</span>
                 </div>
                 <div class="book-parts2">
+                    <label for="sample-size2">迭代次数:</label>
+                    <input type="range" min="99" max="5000" value="1000" class="slider" id="sample-size2">
+                    <span id="sample-size-value2">1000</span>
                 </div>
                 <div class="book-parts3">
+                    <label for="sample-size3">批量大小:</label>
+                    <input type="range" min="32" max="256" value="128" class="slider" id="sample-size3">
+                    <span id="sample-size-value3">128</span>
                 </div>
             </div>
         </div>
@@ -145,8 +173,21 @@
         <div class="history7"></div>
         <div class="history8"></div>
         <div class="para-parts">
-
+            <div class="para-title">
+                实验效率优化
+            </div>
+            <div class="para-pic">
+                <img src="./images/para.png" alt="">
+            </div>
         </div>
+        <div class="para1"></div>
+        <div class="para2"></div>
+        <div class="para3"></div>
+        <div class="para4"></div>
+        <div class="para5"></div>
+        <div class="para6"></div>
+        <div class="para7"></div>
+        <div class="para8"></div>
         <div class="progress-parts">
             <div class="progress-title">实验进度监控</div>
             <div class="circle-container">
@@ -160,19 +201,48 @@
             <div class="progress-title2">损失值</div>
             <div class="progress-title3">准确率</div>                
         </div>
+        <div class="progress1"></div>
+        <div class="progress2"></div>
+        <div class="progress3"></div>
+        <div class="progress4"></div>
+        <div class="progress5"></div>
+        <div class="progress6"></div>
+        <div class="progress7"></div>
+        <div class="progress8"></div>
         <div class="result-parts">
-            <label for="sample-size">Sample Size:</label>
-<input type="range" min="0" max="1000" value="500" class="slider" id="sample-size">
-<p>Sample Size: <span id="sample-size-value">500</span></p>
-
-<button id="randomize-groups">Randomize Groups</button>
-
-<p>Experiment Start Time: <span id="start-time"></span></p>
-
+            <div class="result-title">实验结果反馈</div>
+            <div class="result-pic">
+                <img src="./images/result.png" alt="">
+            </div>
         </div>
+        <div class="result1"></div>
+        <div class="result2"></div>
+        <div class="result3"></div>
+        <div class="result4"></div>
+        <div class="result5"></div>
+        <div class="result6"></div>
+        <div class="result7"></div>
+        <div class="result8"></div>
         <div class="data-parts">
-
+            <div class="data-title">Sonder智能机器人</div>
+            <div id="dialogue-container">
+                <div id="dialogue-box">
+                  <div id="messages"></div>
+                  <div id="input-container">
+                    <input type="text" id="user-input" placeholder="请输入指令...">
+                    <button id="submit-btn">发送</button>
+                  </div>
+                </div>
+            </div>
         </div>
+        <div class="data1"></div>
+        <div class="data2"></div>
+        <div class="data3"></div>
+        <div class="data4"></div>
+        <div class="data5"></div>
+        <div class="data6"></div>
+        <div class="data7"></div>
+        <div class="data8"></div>
     </div>
 
     <script>
@@ -210,30 +280,30 @@
         });
 
         uploadInput.addEventListener('change', () => {
-        const file = uploadInput.files[0];
+            const file = uploadInput.files[0];
         });
 
         /* 显示进度条 */
         uploadInput.addEventListener('change', function() {
-        progressBar.style.display = 'block';
-        // 设置进度条初始值为0
-        bar.style.width = '0%';
-        percent.innerText = '0%';
-        fileInfo.innerText = '';
+            progressBar.style.display = 'block';
+            // 设置进度条初始值为0
+            bar.style.width = '0%';
+            percent.innerText = '0%';
+            fileInfo.innerText = '';
 
-        // 模拟进度条，每500毫秒增加5%
-        let i = 0;
-        let interval = setInterval(function() {
-        i += 5;
-        bar.style.width = i + '%';
-        percent.innerText = i + '%';
-        if (i === 100) {
-            clearInterval(interval);
-            setTimeout(function() {
-            fileInfo.innerText = '上传成功';
-            }, 1000);
-        }
-        }, 500);
+            // 模拟进度条，每500毫秒增加5%
+            let i = 0;
+            let interval = setInterval(function() {
+            i += 5;
+            bar.style.width = i + '%';
+            percent.innerText = i + '%';
+            if (i === 100) {
+                clearInterval(interval);
+                setTimeout(function() {
+                fileInfo.innerText = '上传成功';
+                }, 1000);
+            }
+            }, 500);
         });
 
         /* 亮暗分割圆效果 */
@@ -241,83 +311,99 @@
         const percentage = document.getElementById("percentage");
 
         circle.addEventListener("click", function(event) {
-        const rect = circle.getBoundingClientRect();
-        const centerX = rect.left + rect.width / 2;
-        const centerY = rect.top + rect.height / 2;
-        let angle = Math.atan2(event.clientY - centerY, event.clientX - centerX);
-        if (angle < 0) {
-            angle += 2 * Math.PI;
-        }
-        let percent = Math.round((angle / (2 * Math.PI) + 0.25) * 100);
-        if (percent > 100) {
-            percent -= 100;
-        } else if (percent < 0) {
-            percent += 100;
-        }
-        percentage.textContent = percent + "%";
-        circle.style.setProperty("--rotate", angle + "rad");
-        circle.style.setProperty("--color", percent >= 50 ? "blue" : "gray");
+            const rect = circle.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            let angle = Math.atan2(event.clientY - centerY, event.clientX - centerX);
+            if (angle < 0) {
+                angle += 2 * Math.PI;
+            }
+            let percent = Math.round((angle / (2 * Math.PI) + 0.25) * 100);
+            if (percent > 100) {
+                percent -= 100;
+            } else if (percent < 0) {
+                percent += 100;
+            }
+            percentage.textContent = percent + "%";
+            circle.style.setProperty("--rotate", angle + "rad");
+            circle.style.setProperty("--color", percent >= 50 ? "blue" : "gray");
         });
 
         const circle1 = document.getElementById("circle1");
         const percentage1 = document.getElementById("percentage1");
 
         circle1.addEventListener("click", function(event1) {
-        const rect = circle1.getBoundingClientRect();
-        const centerX = rect.left + rect.width / 2;
-        const centerY = rect.top + rect.height / 2;
-        let angle = Math.atan2(event.clientY - centerY, event.clientX - centerX);
-        if (angle < 0) {
-            angle += 2 * Math.PI;
-        }
-        let percent = Math.round((angle / (2 * Math.PI) + 0.25) * 100);
-        if (percent > 100) {
-            percent -= 100;
-        } else if (percent < 0) {
-            percent += 100;
-        }
-        percentage1.textContent = percent + "%";
-        circle1.style.setProperty("--rotate", angle + "rad");
-        circle1.style.setProperty("--color", percent >= 50 ? "blue" : "gray");
+            const rect = circle1.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            let angle = Math.atan2(event.clientY - centerY, event.clientX - centerX);
+            if (angle < 0) {
+                angle += 2 * Math.PI;
+            }
+            let percent = Math.round((angle / (2 * Math.PI) + 0.25) * 100);
+            if (percent > 100) {
+                percent -= 100;
+            } else if (percent < 0) {
+                percent += 100;
+            }
+            percentage1.textContent = percent + "%";
+            circle1.style.setProperty("--rotate", angle + "rad");
+            circle1.style.setProperty("--color", percent >= 50 ? "blue" : "gray");
         });
 
-        // 获取样本量滑块和值
-const sampleSizeSlider = document.getElementById("sample-size");
-const sampleSizeValue = document.getElementById("sample-size-value");
-sampleSizeValue.innerHTML = sampleSizeSlider.value; // 初始值
+        /* 学习率 */
+        const sampleSizeSlider1 = document.getElementById("sample-size1");
+        const sampleSizeValue1 = document.getElementById("sample-size-value1");
+        sampleSizeValue1.innerHTML = sampleSizeSlider1.value; // 初始值
+        sampleSizeSlider1.addEventListener("input", function() {
+            sampleSizeValue1.innerHTML = this.value;
+        });
 
-// 更新样本量值
-sampleSizeSlider.addEventListener("input", function() {
-  sampleSizeValue.innerHTML = this.value;
-});
+        /* 迭代次数 */
+        const sampleSizeSlider2 = document.getElementById("sample-size2");
+        const sampleSizeValue2 = document.getElementById("sample-size-value2");
+        sampleSizeValue2.innerHTML = sampleSizeSlider2.value; // 初始值
+        sampleSizeSlider2.addEventListener("input", function() {
+            sampleSizeValue2.innerHTML = this.value;
+        });
 
-// 随机分组
-const randomizeGroupsButton = document.getElementById("randomize-groups");
-randomizeGroupsButton.addEventListener("click", function() {
-  const sampleSize = sampleSizeSlider.value;
-  const groupASize = Math.round(sampleSize / 2); // 一半分到 A 组
-  const groupBSize = sampleSize - groupASize; // 剩下的分到 B 组
-  const groupAssignment = new Array(sampleSize);
+        /* 批量大小 */
+        const sampleSizeSlider3 = document.getElementById("sample-size3");
+        const sampleSizeValue3 = document.getElementById("sample-size-value3");
+        sampleSizeValue3.innerHTML = sampleSizeSlider3.value; // 初始值
+        sampleSizeSlider3.addEventListener("input", function() {
+            sampleSizeValue3.innerHTML = this.value;
+        });
 
-  // 生成随机组分配
-  for (let i = 0; i < groupASize; i++) {
-    groupAssignment[i] = "A";
-  }
-  for (let i = groupASize; i < sampleSize; i++) {
-    groupAssignment[i] = "B";
-  }
-  for (let i = sampleSize - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [groupAssignment[i], groupAssignment[j]] = [groupAssignment[j], groupAssignment[i]]; // 随机交换顺序
-  }
+        // 记录实验开始时间
+        const startTime = Date.now();
+        const startTimeElement = document.getElementById("start-time");
 
-  console.log(groupAssignment); // 打印组分配
-});
 
-// 记录实验开始时间
-const startTime = Date.now();
-const startTimeElement = document.getElementById("start-time");
-startTimeElement.innerHTML = new Date(startTime).toLocaleString();
+        /* 聊天机器人 */
+        const messagesContainer = document.getElementById("messages");
 
+            function showMessage(message) {
+                messagesContainer.innerHTML += `<p class="message">${message}</p>`;
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            }
+
+            function handleUserInput() {
+                const userInput = document.getElementById("user-input").value.trim().toLowerCase();
+                showMessage(`用户：${userInput}`);
+                if (userInput === "你好") {
+                    showMessage("机器人：您好！");
+                }else if (userInput === "请帮我查找4月13日的实验数据") {
+                    showMessage("机器人：好的，请给我15秒为你在数据库中查找4月13日的实验数据！");
+                }else if (userInput === "感觉你不如原神") {
+                    showMessage("机器人：你说的对，但是《原神》是由米哈游自主研发的一款全新开放世界冒险游戏。游戏发生在一个被称作「提瓦特」的幻想世界，在这里，被神选中的人将被授予「神之眼」，导引元素之力。你将扮演一位名为「旅行者」的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘「原神」的真相。")
+                }
+                else {
+                showMessage("机器人：抱歉，我不理解您的指令。");
+                }
+                document.getElementById("user-input").value = "";
+            }
+
+      document.getElementById("submit-btn").addEventListener("click", handleUserInput);
     </script>
 </body>
