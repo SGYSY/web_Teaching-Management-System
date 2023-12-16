@@ -6,6 +6,6 @@ The project is the pioneering work of the front-end Three Musketeers technology 
 ## Login and registration interface
 ![image](https://github.com/SGYSY/web_Teaching-Management-System/blob/main/readme_pic/Picture2.png)
 ## Home interface
-![image](https://github.com/SGYSY/web_Teaching-Management-System/blob/main/readme_pic/Picture3.png)
+![image](https://github.com/SGYSY/web_Teaching-Management-System/blob/main/readme_pic/Picture.png)
 ## Experimental cloud interface
 ![image](https://github.com/SGYSY/web_Teaching-Management-System/blob/main/readme_pic/Picture1.png)
