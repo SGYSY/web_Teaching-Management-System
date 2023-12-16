@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>云平台注册页面</title>
-    <link rel="stylesheet" href="./css/sign.css">
+    <link rel="stylesheet" href="../css/sign.css">
 </head>
 <body>
     <div class="container">
@@ -16,9 +16,9 @@
             <div class="left-top">
                 <div class="left-title">WELCOME</div>
                 <div class="left-wd">sign in to explore <br> the vast array of courses</div>
-                <img src="./images/land2.png" alt="">
+                <img src="../images/land2.png" alt="">
                 <div class="left-log">
-                    <a href="./load.html">已有账号，点击登录</a>
+                    <a href="load.html">已有账号，点击登录</a>
                 </div>
                 <div class="left-btm">LEARN MORE</div>
             </div>
@@ -141,7 +141,7 @@
             e.preventDefault()
             if(verifyName() && verifyPwd() && verifyPhone()) {
                 localStorage.setItem('hy-uname', username.value)
-                location.href = './load.html'
+                location.href = 'load.html'
             }else {
                 fail.innerText = '登录失败'
             }

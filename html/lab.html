@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>云平台</title>
-    <link rel="stylesheet" href="./css/lab.css">
-    <link rel="stylesheet" href="./iconfont/iconfont.css">
-    <link rel="stylesheet" href="./iconfont9/iconfont.css">
+    <link rel="stylesheet" href="../css/lab.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../iconfont9/iconfont.css">
 </head>
 <body>
     <div class="container">
@@ -17,7 +17,7 @@
 
         <!--头部header:负责头部区域的样式， wrapper只负责版心效果 -->
         <div class="header-demo">
-            <a href="./index.html"><img src="./images/sonder.png" alt=""></a>
+            <a href="index.html"><img src="../images/sonder.png" alt=""></a>
             <div class="demo-choice1">实验总览</div>
             <div class="choice1-1"></div>
             <div class="choice1-2"></div>
@@ -45,17 +45,17 @@
         <div class="header fixed">
             <div class="header-wrapper">
                 <h1 class="header-h1">
-                    <a href="./index.html"><img src="./images/sonder.png" alt=""></a>
+                    <a href="index.html"><img src="../images/sonder.png" alt=""></a>
                 </h1>
         
                 <!-- 导航 -->
                 <div class="nav">
                     <ul class="tool">
                         <li>
-                            <a href="./course.html">课程云</a>
+                            <a href="course.html">课程云</a>
                         </li>
                         <li>
-                            <a href="./work.html">作业云</a>
+                            <a href="work.html">作业云</a>
                         </li>
                         <li>
                             <a href="#">实验云</a>
@@ -71,8 +71,8 @@
         
                 <!-- 用户 -->
                 <div class="user">
-                    <a href="./self.html">
-                        <img src="./images/user.png" alt="">
+                    <a href="self.html">
+                        <img src="../images/user.png" alt="">
                     </a>
                     <a href="javascript:;"><span class="user-name">登录</span></a>
                 </div>
@@ -83,7 +83,7 @@
         <div class="file-parts">
             <div class="file-title">实验文件上传区</div>
             <div for="upload-file" class="upload-label">
-                <img src="./images/worksubmit.jpg" alt="">
+                <img src="../images/worksubmit.jpg" alt="">
             </div>
             <input type="file" id="upload-file" class="upload-input">
             <div id="file-info"></div>
@@ -182,7 +182,7 @@
                 实验效率优化
             </div>
             <div class="para-pic">
-                <img src="./images/para.png" alt="">
+                <img src="../images/para.png" alt="">
             </div>
         </div>
         <div class="para1"></div>
@@ -217,7 +217,7 @@
         <div class="result-parts">
             <div class="result-title">实验结果反馈</div>
             <div class="result-pic">
-                <img src="./images/result.png" alt="">
+                <img src="../images/result.png" alt="">
             </div>
         </div>
         <div class="result1"></div>
@@ -267,7 +267,7 @@
         function render() {
             const uname = localStorage.getItem('hy-uname')
             if (!uname) {
-                userName.innerHTML = '<a href="./load.html">登录</a>'
+                userName.innerHTML = '<a href="load.html">登录</a>'
             }else {
                 userName.innerHTML = `<a href="javascript:;">${uname}</a>`
             }

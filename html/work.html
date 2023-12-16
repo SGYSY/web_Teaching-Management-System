@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>云平台</title>
-    <link rel="stylesheet" href="./css/work.css">
-    <link rel="stylesheet" href="./iconfont/iconfont.css">
-    <link rel="stylesheet" href="./iconfont9/iconfont.css">
+    <link rel="stylesheet" href="../css/work.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../iconfont9/iconfont.css">
 </head>
 <body>
     <div class="container">
@@ -19,20 +19,20 @@
         <div class="header fixed">
             <div class="header-wrapper">
                 <h1 class="header-h1">
-                    <a href="./index.html"><img src="./images/sonder.png" alt=""></a>
+                    <a href="index.html"><img src="../images/sonder.png" alt=""></a>
                 </h1>
         
                 <!-- 导航 -->
                 <div class="nav">
                     <ul class="tool">
                         <li>
-                            <a href="./course.html">课程云</a>
+                            <a href="course.html">课程云</a>
                         </li>
                         <li>
                             <a href="#">作业云</a>
                         </li>
                         <li>
-                            <a href="./lab.html">实验云</a>
+                            <a href="lab.html">实验云</a>
                         </li>
                     </ul>
                 </div>
@@ -45,8 +45,8 @@
         
                 <!-- 用户 -->
                 <div class="user">
-                    <a href="./self.html">
-                        <img src="./images/user.png" alt="">
+                    <a href="self.html">
+                        <img src="../images/user.png" alt="">
                     </a>
                     <a href="javascript:;"><span class="user-name">登录</span></a>
                 </div>
@@ -88,7 +88,7 @@
         <!-- 左侧功能栏 -->
         <div class="left-t-1">
             <div class="flex-pic">
-                <img src="./images/land2.png" alt="">
+                <img src="../images/land2.png" alt="">
             </div>
             <div class="left-t-1-1">
                 <div class="worktitle">作业云</div>
@@ -165,7 +165,7 @@
                 </div>
                 <div class="courseexam2">查看详情</div>
                 <div class="courseexam3">点击预约</div>
-                <img src="./images/exam.png" alt="">
+                <img src="../images/exam.png" alt="">
             </div>
         </div>
         <div class="mainpic3">
@@ -193,7 +193,7 @@
                 </div>
                 <div class="submit-box">
                     <div class="worksubmit">
-                        <img src="./images/worksubmit.jpg" alt="">
+                        <img src="../images/worksubmit.jpg" alt="">
                     </div>
                     <div class="submit-btn">
                         拖动文件<br>
@@ -211,10 +211,10 @@
                 <div class="feedtitle">错题反馈</div>
                 <div class="feedback2">查看详情</div>
                 <div class="feed1">
-                    <img src="./images/feed2.png" alt="">
+                    <img src="../images/feed2.png" alt="">
                 </div>
                 <div class="feed2">
-                    <img src="./images/feed3.png" alt="">
+                    <img src="../images/feed3.png" alt="">
                 </div>
             </div>
         </div>
@@ -309,7 +309,7 @@
         function render() {
             const uname = localStorage.getItem('hy-uname')
             if (!uname) {
-                userName.innerHTML = '<a href="./load.html">登录</a>'
+                userName.innerHTML = '<a href="load.html">登录</a>'
             }else {
                 userName.innerHTML = `<a href="javascript:;">${uname}</a>`
             }

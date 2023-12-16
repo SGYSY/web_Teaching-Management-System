@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>云平台</title>
-    <link rel="stylesheet" href="./css/course.css">
-    <link rel="stylesheet" href="./iconfont/iconfont.css">
-    <link rel="stylesheet" href="./iconfont9/iconfont.css">
+    <link rel="stylesheet" href="../css/course.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../iconfont9/iconfont.css">
 </head>
 <body>
     <div class="container">
@@ -19,7 +19,7 @@
         <div class="header fixed">
             <div class="header-wrapper">
                 <h1 class="header-h1">
-                    <a href="./index.html"><img src="./images/sonder.png" alt=""></a>
+                    <a href="index.html"><img src="../images/sonder.png" alt=""></a>
                 </h1>
         
                 <!-- 导航 -->
@@ -29,10 +29,10 @@
                             <a href="#">课程云</a>
                         </li>
                         <li>
-                            <a href="./work.html">作业云</a>
+                            <a href="work.html">作业云</a>
                         </li>
                         <li>
-                            <a href="./lab.html">实验云</a>
+                            <a href="lab.html">实验云</a>
                         </li>
                     </ul>
                 </div>
@@ -45,8 +45,8 @@
         
                 <!-- 用户 -->
                 <div class="user">
-                    <a href="./self.html">
-                        <img src="./images/user.png" alt="">
+                    <a href="self.html">
+                        <img src="../images/user.png" alt="">
                     </a>
                     <a href="javascript:;"><span class="user-name">登录</span></a>
                 </div>
@@ -88,7 +88,7 @@
         <!-- 标签栏 -->
         <div class="flex-l">
             <div class="flex-pic">
-                <img src="./images/land2.png" alt="">
+                <img src="../images/land2.png" alt="">
             </div>
             <div class="flex-2">
                 <div class="classtitle">课程云</div>
@@ -115,7 +115,7 @@
                     <div>课程筛选</div>
                 </div>
                 <div class="classdiscuss">
-                    <a href="./discuss.html">
+                    <a href="discuss.html">
                         <span class="iconfont icon-taolunqu"></span>
                         <div>课程讨论</div>
                     </a>
@@ -144,7 +144,7 @@
         <div class="ban-bar">
             <div class="banner">
                 <div class="b-c">
-                    <img src="./images/coursebar2.png" alt="">
+                    <img src="../images/coursebar2.png" alt="">
                 </div>
                 <div class="toggle">
                     <button class="next">&gt;</button>
@@ -232,8 +232,8 @@
         <div class="part-discuss">
             <div class="distitle">课程讨论</div>
             <div class="discusses">
-                <a href="./discuss.html">
-                    <img src="./images/discuss.png" alt="">
+                <a href="discuss.html">
+                    <img src="../images/discuss.png" alt="">
                 </a>
             </div>
         </div>
@@ -245,7 +245,7 @@
                 <div class="cho-bar3">人工智能学习路线</div>
             </div>
             <div class="root">
-                <img src="./images/root1.png" alt="">
+                <img src="../images/root1.png" alt="">
             </div>
         </div>
         <div class="part-sign">
@@ -255,11 +255,11 @@
                 <div class="sign-bar2">手势解锁签到</div>
             </div>
             <div class="face">
-                <img src="./images/face.png" alt="">
+                <img src="../images/face.png" alt="">
             </div>
             <div class="face-w">点击识别</div>
             <div class="sign1">
-                <img src="./images/sign1.png" alt="">
+                <img src="../images/sign1.png" alt="">
             </div>
             <div class="sign1-w">点击解锁</div>
         </div>
@@ -272,10 +272,10 @@
                 <div class="dat-bar4">课程难度反馈</div>
             </div>
             <div class="data1">
-                <img src="./images/data1.png" alt="">
+                <img src="../images/data1.png" alt="">
             </div>
             <div class="data2">
-                <img src="./images/data2.png" alt="">
+                <img src="../images/data2.png" alt="">
             </div>
         </div>
     </div>
@@ -360,7 +360,7 @@
         function render() {
             const uname = localStorage.getItem('hy-uname')
             if (!uname) {
-                userName.innerHTML = '<a href="./load.html">登录</a>'
+                userName.innerHTML = '<a href="load.html">登录</a>'
             }else {
                 userName.innerHTML = `<a href="javascript:;">${uname}</a>`
             }

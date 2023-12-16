@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>用户云</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/user.css">
-    <link rel="stylesheet" href="./iconfont/iconfont.css">
-    <link rel="stylesheet" href="./iconfont4/iconfont.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../iconfont4/iconfont.css">
 </head>
 <body>
     <div class="container">
@@ -20,17 +20,17 @@
         <div class="header fixed">
             <div class="header-wrapper">
                 <h1 class="header-h1">
-                    <a href="#"><img src="./images/sonder.png" alt=""></a>
+                    <a href="#"><img src="../images/sonder.png" alt=""></a>
                 </h1>
         
                 <!-- 导航 -->
                 <div class="nav">
                     <ul class="tool">
                         <li>
-                            <a href="./course.html">课程云</a>
+                            <a href="course.html">课程云</a>
                         </li>
                         <li>
-                            <a href="./work.html">作业云</a>
+                            <a href="work.html">作业云</a>
                         </li>
                         <li>
                             <a href="#">实验云</a>
@@ -46,8 +46,8 @@
         
                 <!-- 用户 -->
                 <div class="user">
-                    <a href="./self.html">
-                        <img src="./images/user.png" alt="">
+                    <a href="self.html">
+                        <img src="../images/user.png" alt="">
                     </a>
                     <a href="javascript:;"><span class="user-name">登录</span></a>
                 </div>
@@ -215,7 +215,7 @@
         function render() {
             const uname = localStorage.getItem('hy-uname')
             if (!uname) {
-                userName.innerHTML = '<a href="./load.html">登录</a>'
+                userName.innerHTML = '<a href="load.html">登录</a>'
             }else {
                 userName.innerHTML = `<a href="javascript:;">${uname}</a>`
             }

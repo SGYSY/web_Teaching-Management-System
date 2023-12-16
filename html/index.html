@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>云平台</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./iconfont/iconfont.css">
-    <link rel="stylesheet" href="./iconfont4/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../iconfont4/iconfont.css">
 </head>
 <body>
     <div class="container">
@@ -19,20 +19,20 @@
         <div class="header fixed">
             <div class="header-wrapper">
                 <h1 class="header-h1">
-                    <a href="#"><img src="./images/sonder.png" alt=""></a>
+                    <a href="#"><img src="../images/sonder.png" alt=""></a>
                 </h1>
         
                 <!-- 导航 -->
                 <div class="nav">
                     <ul class="tool">
                         <li>
-                            <a href="./course.html">课程云</a>
+                            <a href="course.html">课程云</a>
                         </li>
                         <li>
-                            <a href="./work.html">作业云</a>
+                            <a href="work.html">作业云</a>
                         </li>
                         <li>
-                            <a href="./lab.html">实验云</a>
+                            <a href="lab.html">实验云</a>
                         </li>
                     </ul>
                 </div>
@@ -45,8 +45,8 @@
         
                 <!-- 用户 -->
                 <div class="user">
-                    <a href="./self.html">
-                        <img src="./images/user.png" alt="">
+                    <a href="self.html">
+                        <img src="../images/user.png" alt="">
                     </a>
                     <a href="javascript:;"><span class="user-name">登录</span></a>
                 </div>
@@ -74,7 +74,7 @@
             <div class="wrapper">
                 <div class="cube">
                     <div class="pic">
-                        <img src="./images/banner1.jpg" alt="">
+                        <img src="../images/banner1.jpg" alt="">
                     </div>
                     <div class="toggle">
                         <button class="next">&gt;</button>
@@ -117,7 +117,7 @@
         <!-- 分区图片展示 -->
         <div class="show wrapper">
             <div class="show-lab">
-                <img src="./images/show4.png" alt="">
+                <img src="../images/show4.png" alt="">
                 <div class="words4">
                     <div class="title4">Sonder 实验云</div>
                     <div class="para4">
@@ -131,7 +131,7 @@
                 </div>
             </div>
             <div class="show-course">
-                <img src="./images/show2.png" alt="">
+                <img src="../images/show2.png" alt="">
                 <div class="words1">
                     <div class="title1">Sonder 课程云</div>
                     <div class="para1">
@@ -139,12 +139,12 @@
                         新增个性化学习路线，奖励机制提高学生兴趣，保证课程质量。
                     </div>
                     <span class="btn1">
-                        <a href="./course.html">点击查看</a>
+                        <a href="course.html">点击查看</a>
                     </span>
                 </div>
             </div>
             <div class="show-work">
-                <img src="./images/show3.png" alt="">
+                <img src="../images/show3.png" alt="">
                 <div class="words3">
                     <div class="title3">Sonder 作业云</div>
                     <div class="para3">
@@ -152,12 +152,12 @@
                         创造课件，考试，作业，批改，错题，五项闭环。
                     </div>
                     <span class="btn3">
-                        <a href="./work.html">点击查看</a>
+                        <a href="work.html">点击查看</a>
                     </span>
                 </div>
             </div>
             <div class="show-user">
-                <img src="./images/show1.png" alt="">
+                <img src="../images/show1.png" alt="">
                 <div class="words2">
                     <div class="title2">Sonder 用户云</div>
                     <div class="para2">
@@ -165,7 +165,7 @@
                         可以对课程学员，使用用户进行筛选和修改。
                     </div>
                     <span class="btn2">
-                        <a href="./user.html">点击查看</a>
+                        <a href="user.html">点击查看</a>
                     </span>
                 </div>
             </div>
@@ -174,20 +174,20 @@
         <!-- 热门分类 -->
         <div class="categories wrapper">
             <div class="pp-cg">
-                <img src="./images/course1.png" alt="">
+                <img src="../images/course1.png" alt="">
             </div>
             <div class="pp-cg">
-                <img src="./images/course2.png" alt="">
+                <img src="../images/course2.png" alt="">
             </div>
             <div class="pp-cg">
-                <img src="./images/course3.png" alt="">
+                <img src="../images/course3.png" alt="">
             </div>
         </div>
 
         <!-- 版权 -->
         <div class="footer wrapper">
             <div class="left">
-                <img src="./images/sonder.png" alt="">
+                <img src="../images/sonder.png" alt="">
                 <div>Sonder云平台教学管理系统，为每一个爱学习的同学圆高校梦</div>
             </div>
             <div class="f-right">
@@ -299,7 +299,7 @@
         function render() {
             const uname = localStorage.getItem('hy-uname')
             if (!uname) {
-                userName.innerHTML = '<a href="./load.html">登录</a>'
+                userName.innerHTML = '<a href="load.html">登录</a>'
             }else {
                 userName.innerHTML = `<a href="javascript:;">${uname}</a>`
             }

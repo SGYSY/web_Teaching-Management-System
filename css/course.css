@@ -48,7 +48,7 @@ body {
     width: 100%;
     height: 80px;
     margin: 0, auto;
-    background-color: #fff;
+    background-color: rgba(30, 63, 188, 0.8);
     display: flex;
     justify-content: center;
     box-shadow: inset 0 -1px 0 0 #e7eaef;
