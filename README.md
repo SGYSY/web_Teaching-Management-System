@@ -7,8 +7,17 @@ The project is the pioneering work of the front-end Three Musketeers technology 
 
 ## Web interface effect display
 - **Login and registration interface**
+  
+  The login interface of users' name, password, and verification code is implemented separately, the verification code is designed as a replacement for the blue square block, and the registration interface is designed, and the complete function flow line is implemented.
 ![image](https://github.com/SGYSY/web_Teaching-Management-System/blob/main/readme_pic/Picture2.png)
+
 - **Home interface**
+
+  The main interface implements carousel images, top bars, side bars, and complete multi-interface jump and search functions.
+
 ![image](https://github.com/SGYSY/web_Teaching-Management-System/blob/main/readme_pic/Picture.png)
+
 - **Experimental cloud interface**
+
+  The experimental part implements complete experimental data upload and visual data display, and uses the front-end interface to initially demonstrate end-to-end parameter control.
 ![image](https://github.com/SGYSY/web_Teaching-Management-System/blob/main/readme_pic/Picture1.png)
